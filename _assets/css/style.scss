@@ -2113,8 +2113,8 @@ footer {
 		}*/
     }
     .main-content {
-        padding-top: 0;
-        padding-bottom: 0;
+        // padding-top: 0;
+        // padding-bottom: 0;
         height: 100%;
         .login-container {
         	width:50%;
@@ -3150,7 +3150,7 @@ footer {
 }
 
 .main-content {
-    padding-top: 80px;
+    padding-top: 120px;
     min-height: 185px;
     min-height: 500px;
     line-height: 150%;
@@ -4431,4 +4431,14 @@ footer {
             }
         }
     }
+}
+
+
+// New styles 
+.side-col {
+    height: 100%;
+}
+
+.main-col {
+    height: 100%;
 }

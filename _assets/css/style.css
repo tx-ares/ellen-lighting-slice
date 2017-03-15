@@ -1700,8 +1700,6 @@ footer {
 			position:relative;
 		}*/ }
 .home .main-content {
-  padding-top: 0;
-  padding-bottom: 0;
   height: 100%; }
   .home .main-content .login-container {
     width: 50%;
@@ -2479,7 +2477,7 @@ footer {
         color: #fff; }
 
 .main-content {
-  padding-top: 80px;
+  padding-top: 120px;
   min-height: 185px;
   min-height: 500px;
   line-height: 150%; }
@@ -3486,5 +3484,11 @@ footer {
       padding: 25px; }
       .responsive-tabs-wrapper .responsive-tabs__panel.responsive-tabs__panel--active {
         padding-top: 0; } }
+
+.side-col {
+  height: 100%; }
+
+.main-col {
+  height: 100%; }
 
 /*# sourceMappingURL=style.css.map */
