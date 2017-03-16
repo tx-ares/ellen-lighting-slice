@@ -27,11 +27,11 @@ function showPage() {
 	
 }
 
-//function loadElements() {
-//	"use strict";
+function loadElements() {
+	"use strict";
 	
-//	$('footer').addClass('loaded');
-//}
+	$('footer').addClass('loaded');
+}
 
 function initAccordion() {
 	"use strict";
@@ -42,72 +42,6 @@ function initAccordion() {
         animSpeed: 300
     });
 }
-
-//function initMobileMenu() {
-//	"use strict";
-	
-//	//clone main menu
-//	var mobileMenu = $('.top-nav').clone();
-//	mobileMenu.find('li.has-sub').removeClass('has-sub');
-//	mobileMenu.find('.feature').remove();
-//	mobileMenu.find('.search').remove();
-//	mobileMenu.removeClass('top-nav');
-//	$('.menu-container').prepend(mobileMenu);
-	
-//	$('.mobile-menu .menu-container>ul').addClass('collapsible');
-	
-//	//init menu opener (burger)
-//	$('.menu-opener').click(function (e) {
-//		e.preventDefault();
-		
-//		$('.menu-opener').toggleClass('active');
-//		$('.menu-wrapper').toggleClass('active');
-		
-//		if(!$('.menu-opener').hasClass('active')) {
-//			collapseAll();
-//		}
-		
-//		$('body').toggleClass('no-scroll');
-//		$('.mobile-menu').toggleClass('active');
-		
-		
-//	});
-
-//	//init collapsible menu
-//	$('.collapsible li').has('ul').addClass('has-sub');
-//	$('.collapsible li a').wrapInner('<span/>');
-//	$('.collapsible li.has-sub>a').append('<span class="holder"></span>');
-	
-//    $('.collapsible li.has-sub>a>.holder').on('click', function (e) {
-//		e.preventDefault();
-		
-//		$(this).removeAttr('href');
-//		var element = $(this).closest('li');
-//		if (element.hasClass('open')) {
-//			element.removeClass('open');
-//			element.find('li').removeClass('open');
-//			element.find('ul').slideUp();
-//		}
-//		else {
-//			element.addClass('open');
-//			element.children('ul').slideDown('fast');
-//			element.siblings('li').children('ul').slideUp();
-//			element.siblings('li').removeClass('open');
-//			element.siblings('li').find('li').removeClass('open');
-//			element.siblings('li').find('ul').slideUp();
-//		}
-//	});
-	
-//	function collapseAll() {
-//		$('.collapsible li').each(function() {
-//            if ($(this).hasClass('open')) {
-//				$(this).removeClass('open');
-//				$(this).find('li').removeClass('open');
-//				$(this).find('ul').slideUp();
-//			}
-//        });
-//	}
-//}
 
 function initDesktopMenu() {
 	"use strict";
@@ -135,65 +69,6 @@ function initAccordion() {
 	});
 }
 
-//function removeMatchHeight() {
-//	"use strict";
-	
-//	$('[eq-height]>[eq-col]').matchHeight('remove');
-//}
-
-//function initMatchHeight() {
-//	"use strict";
-	
-//	$('[eq-height]>[eq-col]').matchHeight();
-//}
-
-//function initcollapsibleContent() {
-//	"use strict";
-	
-//	$('.collapsible-opener').click(function (e) {
-//		e.preventDefault();
-		
-//		$(this).parent().toggleClass('active');
-		
-//		if(window.matchMedia('only screen and (max-width: 768px)').matches && $(this).parent().hasClass('active')) {
-//			//console.log('log');
-			
-//			var scroll_to = $(this).parent().offset().top + 
-//							$(this).parent().find('.collapsible-content').height();
-			
-			
-//			$('html,body').animate({
-//				scrollTop: scroll_to
-//			}, 300);
-			
-//		}
-//	});
-	
-//	$('#scrolldown').click(function (e) {
-		
-//		$('html, body').animate({
-//			scrollTop: 0
-//		}, 500);
-//	});
-//}
-
-function initOpenCloseSearch() {
-	"use strict";
-	
-	$('.top-search-opener').click(function (e) {
-		e.preventDefault();
-		
-		$('.search-box').toggleClass('active');
-	});
-	
-	$('.search-close').click(function (e) {
-		e.preventDefault();
-		
-		$('.search-box').toggleClass('active');
-	});
-	
-}
-
 function initdataImageBackground() {
 	"use strict";
 	
@@ -211,39 +86,6 @@ function initdataImageBackground() {
 		});
 	}
 }
-
-//function checkIfPageBottomEdge() {
-//	"use strict";
-		
-//	//var footerHeight = $('footer').height();
-//	//$('#wrapper').css({'padding-bottom':footerHeight+'px'});
-	
-//	$(window).scroll(function(){
-	
-//		if ( $(window).scrollTop() === ($(document).height() - $(window).height())  ) {
-//			$('body').addClass('page-bottom-edge-hit');
-//		} else {
-//			$('body').removeClass('page-bottom-edge-hit');
-//		}
-//	});
-//}
-
-//function initClampText() {
-//	"use strict";
-	
-//	$('[data-ellipsis]').each(function(index, element) {
-//		var lineCount = $(this).attr('data-ellipsis');
-//		if(lineCount === "") {
-//			lineCount = 1;
-//		}
-		
-//		lineCount = parseInt(lineCount);
-		
-//		//console.log(lineCount);
-		
-//		$clamp(element, { clamp: lineCount});
-//	});
-//}
 
 function initSlider() {
 	"use strict";
@@ -291,18 +133,6 @@ function resizeSlider() {
     });
 }
 
-//function initStickyHeader() {
-//    "use strict";
-	
-//    $(window).scroll(function () {
-//        if ($(this).scrollTop() > 32 || window.matchMedia('only screen and (max-width: 1024px)').matches) {
-//            $('body').addClass("header-compressed");
-//        }
-//        else {
-//			$('body').removeClass("header-compressed");
-//        }
-//    });
-//}
 
 function initToggleActiveClass() {
 	"use strict";
@@ -313,43 +143,6 @@ function initToggleActiveClass() {
 	});
 }
 
-//function doneResizing() {
-//	"use strict";
-	
-//	/* reset mobile menu */
-//	if(window.matchMedia('only screen and (min-width: 768px)').matches) {
-//		if($('.menu-opener').hasClass('active')) {
-//			$('.menu-opener').click();
-//		}
-//	}
-	
-//	if(window.matchMedia('only screen and (max-width: 1024px)').matches && $(document).scrollTop() < 1) {
-//		$('body').addClass("header-compressed");
-//	} else {
-//		$('body').removeClass("header-compressed");
-//	}
-	
-//	/* Check if body has scrollbar */
-//	if ($(document).height() === $(window).height()) {
-//        $('body').addClass('no-scrollbar');
-//    } else {
-//		$('body').removeClass('no-scrollbar');
-//	}
-	
-//	resizeSlider();
-//	initMatchHeight();
-//}
-
-var resizeId;
-//$(window).resize(function() {
-//	"use strict";
-	
-//	clearTimeout(resizeId);
-//    resizeId = setTimeout(doneResizing, 500);
-	
-//	resizeSlider();
-//	removeMatchHeight();
-//});
 
 $(window).load(function () {
 	"use strict";
@@ -361,20 +154,14 @@ jQuery(document).ready(function() {
 	"use strict";
 	
 	showPage();
-	//initDesktopMenu();
-	//initMobileMenu();
-	// initStickyHeader();
-	//checkIfPageBottomEdge();
 	initToggleActiveClass();
 	
 	initLazyLoadImage();
 	initAccordion();
-	//initMatchHeight();
-	//initcollapsibleContent();
+
 	initOpenCloseSearch();
 	initdataImageBackground();
 	initSlider();
-	//initClampText();
 	initAccordion();
 	RESPONSIVEUI.responsiveTabs();
 });
