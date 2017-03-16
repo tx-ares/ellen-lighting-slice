@@ -1517,6 +1517,8 @@ $padding-sm: 20px;
 /* Main wrapper of the page */
 
 #wrapper {
+    width:100%;
+
     @include transition(padding-top .3s);
     &:before,
     &:after {
@@ -2768,20 +2770,7 @@ footer {
     }
 }
 
-.header-sticky {
-    #wrapper {
-        @include min-screen(769px) {
-            padding-top: 129px;
-            @include transition(all .3s);
-        }
-    }
-    &.header-compressed {
-        #wrapper {
-            @include min-screen(769px) {
-                padding-top: 58px;
-            }
-        }
-    }
+
     header {
         position: fixed;
         top: 0;
@@ -2822,111 +2811,9 @@ footer {
         	}
         }
     }
-}
 
-.header-compressed {
-    #wrapper {
-        padding-top: 58px;
-    }
-    header {
-        height: 58px;
-        @include transition(all .3s);
-        >.container-fluid {
-            >.row {
-                >[class*="col-"] {
-                    height: 58px;
-                }
-            }
-        }
-        .logo {
-            position: relative;
-            @include transition(all .3s);
-            img {
-                // width: 141px!important;
-                // height: 40px!important;
-                @include transition(all .3s);
-            }
-            .slogan {
-                display: inline-block;
-                float: right;
-                @include font-size(12px);
-                color: $colorDarkGrey;
-                border-left: solid 1px $colorLightGrey4;
-                padding-left: 10px;
-                margin-left: 10px;
-                position: relative;
-                top: 21px;
-                display: none;
-                @include transition(all .3s);
-            }
-        }
-        /* Main Menu */
-        ul.top-nav {
-            >li {
-                >a {
-                    padding: 16.5px 20px;
-                    @include transition(all .3s);
-                }
-            }
-        }
-        @include max-screen($xlg) {
-            ul.top-nav {
-                >li {
-                    >a {
-                        padding: 18px 20px;
-                    }
-                }
-            }
-        }
-    }
-}
 
-.footer-sticky {
-    .main-content {
-        @include min-screen(769px) {
-            // padding-bottom: 55px;
-        }
-    }
-    footer {
-        @include min-screen(769px) {
-            position: fixed;
-            bottom: 0;
-            right: 0;
-            width: 100%;
-            z-index: 999;
-            @include transition(all .5s);
-            .copyright {
-                opacity: 0;
-                visibility: hidden;
-                @include transition(all .3s);
-            }
-            &.loaded {
-                bottom: 0;
-            }
-        }
-    }
-    &.no-scrollbar {
-        footer {
-            @include min-screen(769px) {
-                .copyright {
-                    opacity: 1;
-                    visibility: inherit;
-                }
-            }
-        }
-    }
-}
 
-.page-bottom-edge-hit {
-    &.footer-sticky {
-        footer {
-            .copyright {
-                opacity: 1;
-                visibility: inherit;
-            }
-        }
-    }
-}
 
 .main-content-fullpage {
     .main-content {
@@ -3319,7 +3206,7 @@ footer {
         }
         span {
             display: block;
-            @includ font-size(18px);
+            @include font-size(18px);
             font-weight: 500;
             color: $colorLightGrey4;
         }

@@ -1162,6 +1162,7 @@ table strong {
 
 /* Main wrapper of the page */
 #wrapper {
+  width: 100%;
   -moz-transition: padding-top 0.3s;
   -o-transition: padding-top 0.3s;
   -webkit-transition: padding-top 0.3s;
@@ -2191,17 +2192,7 @@ footer {
     .fullpage #wrapper {
       height: auto; } }
 
-@media only screen and (min-width: 769px) {
-  .header-sticky #wrapper {
-    padding-top: 129px;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s; } }
-@media only screen and (min-width: 769px) {
-  .header-sticky.header-compressed #wrapper {
-    padding-top: 58px; } }
-.header-sticky header {
+header {
   position: fixed;
   top: 0;
   left: 0;
@@ -2209,105 +2200,28 @@ footer {
   height: 120px;
   border-bottom: 3px solid #970f0f;
   background: #fff; }
-  .header-sticky header .title-text {
+  header .title-text {
     padding: 30px 0; }
-    .header-sticky header .title-text h1 {
+    header .title-text h1 {
       margin-bottom: 5px; }
-    .header-sticky header .title-text p {
+    header .title-text p {
       font-size: .8rem;
       font-family: "Georgia", sans-serif;
       letter-spacing: 2px; }
-  .header-sticky header .contact-text {
+  header .contact-text {
     padding: 15px 0;
     text-align: right;
     font-size: .8rem;
     margin: 20px 0; }
-    .header-sticky header .contact-text strong {
+    header .contact-text strong {
       font-size: 1rem; }
-    .header-sticky header .contact-text .fa {
+    header .contact-text .fa {
       color: #970f0f; }
   @media only screen and (max-width: 1024px) {
-    .header-sticky header .title-text {
+    header .title-text {
       display: none; }
-    .header-sticky header .contact-text {
+    header .contact-text {
       display: none; } }
-
-.header-compressed #wrapper {
-  padding-top: 58px; }
-.header-compressed header {
-  height: 58px;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  /* Main Menu */ }
-  .header-compressed header > .container-fluid > .row > [class*="col-"] {
-    height: 58px; }
-  .header-compressed header .logo {
-    position: relative;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s; }
-    .header-compressed header .logo img {
-      -moz-transition: all 0.3s;
-      -o-transition: all 0.3s;
-      -webkit-transition: all 0.3s;
-      transition: all 0.3s; }
-    .header-compressed header .logo .slogan {
-      display: inline-block;
-      float: right;
-      font-size: 12px;
-      font-size: 0.75rem;
-      color: #333;
-      border-left: solid 1px #878686;
-      padding-left: 10px;
-      margin-left: 10px;
-      position: relative;
-      top: 21px;
-      display: none;
-      -moz-transition: all 0.3s;
-      -o-transition: all 0.3s;
-      -webkit-transition: all 0.3s;
-      transition: all 0.3s; }
-  .header-compressed header ul.top-nav > li > a {
-    padding: 16.5px 20px;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s; }
-  @media only screen and (max-width: 1280px) {
-    .header-compressed header ul.top-nav > li > a {
-      padding: 18px 20px; } }
-
-@media only screen and (min-width: 769px) {
-  .footer-sticky footer {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    z-index: 999;
-    -moz-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s; }
-    .footer-sticky footer .copyright {
-      opacity: 0;
-      visibility: hidden;
-      -moz-transition: all 0.3s;
-      -o-transition: all 0.3s;
-      -webkit-transition: all 0.3s;
-      transition: all 0.3s; }
-    .footer-sticky footer.loaded {
-      bottom: 0; } }
-@media only screen and (min-width: 769px) {
-  .footer-sticky.no-scrollbar footer .copyright {
-    opacity: 1;
-    visibility: inherit; } }
-
-.page-bottom-edge-hit.footer-sticky footer .copyright {
-  opacity: 1;
-  visibility: inherit; }
 
 .main-content-fullpage .main-content {
   padding-top: 0; }
@@ -2619,7 +2533,8 @@ footer {
           padding-right: 30px; } }
     .send-request .more-phone span {
       display: block;
-      @includ font-size(18px);
+      font-size: 18px;
+      font-size: 1.125rem;
       font-weight: 500;
       color: #878686; }
     .send-request .more-phone a {
