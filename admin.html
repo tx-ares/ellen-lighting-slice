@@ -18,15 +18,15 @@
         <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
     <![endif]-->
     <script type="text/javascript">
-    if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
-        var msViewportStyle = document.createElement('style')
-        msViewportStyle.appendChild(
-            document.createTextNode(
-                '@-ms-viewport{width:auto!important}'
+        if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+            var msViewportStyle = document.createElement('style')
+            msViewportStyle.appendChild(
+                document.createTextNode(
+                    '@-ms-viewport{width:auto!important}'
+                )
             )
-        )
-        document.querySelector('head').appendChild(msViewportStyle)
-    }
+            document.querySelector('head').appendChild(msViewportStyle)
+        }
     </script>
     <!-- Pagespeed compliant - Avoid render blocking load of CSS -->
     <!--  <script type="text/javascript">
@@ -50,33 +50,32 @@
         <div>Javascript must be enabled for the correct page display</div>
     </noscript>
     <a class="accessibility" href="#main-content" accesskey="S">Skip to Content</a>
-    <div id="wrapper" class="tframe">
+    <div class="container fw fh no-padding">
         <!-- ******************************************************* -->
         <!-- Header -->
         <!-- ******************************************************* -->
         <header>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 nopadding">
-                        <div class="img-responsive">
-                            <!-- <div class="tcell valign-mid"> -->
-                            <!-- <h1 style="margin-bottom:0;"> -->
-                            <a href="#" class="logo">
-                                <img src="_assets/images/logo.jpg" alt="Ellen Lighting" />
-                            </a>
-                            <!-- </h1> -->
-                            <!-- </div> -->
-                        </div>
-                    </div>
-                    <div class="col-md-4 text-center title-text">
-                        <h1>WELCOME <strong>STOREMANAGER01</strong></h1>
-                        <p>sub-header</p>
-                    </div>
-                    <div class="col-md-4 contact-text">
-                        <span><strong><i class="fa fa-phone" aria-hidden="true"></i>713.771.5312</strong></span>
-                        <p>1261 Stafford Rd. Stafford, TX 77489</p>
+            <div class="row">
+                <div class="col-md-4 nopadding">
+                    <div class="img-responsive">
+                        <!-- <div class="tcell valign-mid"> -->
+                        <!-- <h1 style="margin-bottom:0;"> -->
+                        <a href="#" class="logo">
+                            <img src="_assets/images/logo.jpg" alt="Ellen Lighting" />
+                        </a>
+                        <!-- </h1> -->
+                        <!-- </div> -->
                     </div>
                 </div>
+                <div class="col-md-4 text-center title-text">
+                    <h1>WELCOME <strong>STOREMANAGER01</strong></h1>
+                    <p>sub-header</p>
+                </div>
+                <div class="col-md-4 contact-text">
+                    <span><strong><i class="fa fa-phone" aria-hidden="true"></i>713.771.5312</strong></span>
+                    <p>1261 Stafford Rd. Stafford, TX 77489</p>
+                </div>
+
             </div>
 
         </header>
@@ -84,22 +83,22 @@
         <!-- Main Content -->
         <!-- ******************************************************* -->
         <section class="main-content">
-            <div class="container">
-                <div class="row">
-                  <div class="col-md-2 aside">
-                <ul>
-                    <li>Home</li>
-                    <li>Admin</li>
-                    <li>Reports</li>
-                </ul>
-            </div>
-            <div class="col-md-10 main-col">
-                   
-            </div>
-            </div>  
+
+            <div class="row">
+                <div class="col-md-2 aside">
+                    <ul>
+                        <li>Home</li>
+                        <li>Admin</li>
+                        <li>Reports</li>
+                    </ul>
                 </div>
-                
-            
+                <div class="col-md-10 main-col">
+
+                </div>
+            </div>
+
+
+
         </section>
         <!-- ******************************************************* -->
         <!-- Footer -->
@@ -107,19 +106,19 @@
         <footer>
             <div class="container-fluid">
                 <div class="row">
-                     <div class="col-md-1 col-sm-6 col-xs-12 pull-left text-center">
-                    <p>Espanol</p>
-                </div>
+                    <div class="col-md-1 col-sm-6 col-xs-12 pull-left text-center">
+                        <p>Espanol</p>
+                    </div>
                     <div class="col-md-6 col-sm-6 col-xs-12 pull-right text-right">
                         <p>Residential Supply a division of Ellen Lighting &amp; Hardware &copy; Copyright 2016 </p>
                     </div>
                 </div>
-               
+
             </div>
         </footer>
-        </div>
-        <!-- Pagespeed compliant - Avoid render blocking load of JS -->
-        <script type="text/javascript">
+    </div>
+    <!-- Pagespeed compliant - Avoid render blocking load of JS -->
+    <script type="text/javascript">
         function loadJS(e) {
             var t = document.createElement("script");
             t.type = "text/javascript", t.async = !0, t.src = e;
@@ -127,11 +126,11 @@
             n.appendChild(t)
         };
         loadJS('_assets/js/all.min.js');
-        </script>
-        <!-- In case javascript is disabled -->
-        <noscript>
-            <script type="text/javascript" src="_assets/css/all.min.js"></script>
-        </noscript>
+    </script>
+    <!-- In case javascript is disabled -->
+    <noscript>
+        <script type="text/javascript" src="_assets/css/all.min.js"></script>
+    </noscript>
 </body>
 
 </html>

@@ -958,323 +958,52 @@ body {
     color: $colorDarkGrey;
 }
 
-header {
-    position: relative;
-    z-index: 9999;
-    background: rgba($colorLightGrey1, 1);
-    min-height: 50px;
-    @include transition(all .3s);
-        .logo {
-            display: inline-block;
-            @include transition(all .3s);
-            img {
-                @include transition(all .3s);
-                padding: 10px 0;
-            } 
-    }
-    /* Main Menu */
-    ul.top-nav {
-        display: table;
-        float: right;
-        padding-right: 110px;
-        /* Style for 1st <ul> only */
-        >li {
-            display: table-cell;
-            position: relative;
-            >a {
-                color: $colorDarkGreen;
-                font-weight: 500;
-                padding: 16.5px 20px;
-                display: block;
-                text-transform: uppercase;
-                @include transition(background .2s);
-                @include font-size(18px);
-                @include max-screen($xlg) {
-                    @include font-size(16px);
-                    padding: 18px 15px;
-                }
-                @include max-screen(1100px) {
-                    @include font-size(15px);
-                    padding: 18.5px 13px;
-                }
-                @include max-screen($lg) {
-                    @include font-size(16px);
-                    padding: 18px 15px;
-                }
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 20vh;
+        border-bottom: 3px solid $colorRed1;
+        background: $colorWhite;
+        
+        .title-text {
+        	padding: 30px 0;
+            h1 {
+                margin-bottom: 5px;
+                font-size: 1.685rem;
             }
-            &.active,
-            &:hover {
-                >a {
-                    background: $colorGreen;
-                    color: $colorWhite;
-                }
-            }
-            /* Style from 2nd <ul> only */
-            >ul {
-                position: absolute;
-                left: 0;
-                top: 100%;
-                background: $colorGreen;
-                width: 320px;
-                min-height: 520px;
-                padding-top: 15px;
-                /* Style of <a> from here forward */
-                a {
-                    font-weight: 500;
-                    color: $colorWhite;
-                    display: block;
-                }
-                >li {
-                    >a {
-                        text-transform: uppercase;
-                        @include font-size(14px);
-                        padding: 15px 40px;
-                        position: relative;
-                        @include transition(background .2s);
-                        &:after {
-                            content: '\f105';
-                            font-family: $font-icon;
-                            @include font-size(14px);
-                            position: absolute;
-                            top: 14px;
-                            right: 40px;
-                            color: $colorWhite;
-                        }
-                        @include max-screen($lg) {
-                            padding: 10px 25px;
-                            &:after {
-                                right: 25px;
-                            }
-                        }
-                    }
-                    &:hover {
-                        >a {
-                            background: $colorDarkGrey;
-                        }
-                    }
-                    /* Style from 3rd <ul> only */
-                    >ul {
-                        position: absolute;
-                        left: 100%;
-                        top: 0;
-                        background: $colorDarkGrey;
-                        width: 320px;
-                        min-height: 520px;
-                        padding: 20px 0;
-                        >li {
-                            position: relative;
-                            >a {
-                                @include font-size(13px);
-                                padding: 8px 30px;
-                                position: relative;
-                                &:before {
-                                    content: '';
-                                    position: absolute;
-                                    left: 17px;
-                                    top: 15px;
-                                    background: $colorGreen;
-                                    width: 3px;
-                                    height: 3px;
-                                }
-                            }
-                            &:hover {
-                                >a {
-                                    color: $colorGreen;
-                                }
-                            }
-                        }
-                        /* End of 3rd <li> */
-                        @include max-screen($lg) {
-                            width: 280px;
-                        }
-                    }
-                }
-                /* End of 2nd <li> */
-                @include max-screen($xlg) {
-                    left: auto;
-                    right: 0;
-                }
-                @include max-screen($xlg) {
-                    width: 280px;
-                }
+            p {
+                font-size: .8rem;
+                font-family: $font-gr;
+                letter-spacing: 2px;
             }
         }
-        /* End of 1st <li> */
-        /* Feature Style */
-        .feature {
-            position: absolute;
-            right: 100%;
-            top: 0;
-            width: 320px;
-            min-height: 520px;
-            background: $colorLightGrey3;
-            @include transition(all .3s);
-            .content {
-                padding: 35px;
-                font-weight: 500;
-                @include font-size(14px);
-                a {
-                    display: block;
-                    img {
-                        display: block;
-                        margin-bottom: 20px;
-                        width: 100%;
-                    }
-                }
-                h3 {
-                    color: $colorBlack;
-                    text-transform: uppercase;
-                    @include font-size(20px);
-                    font-weight: 500;
-                }
+        .contact-text {
+            strong {
+                font-size: 1rem;
             }
-            @include max-screen($lg) {
-                width: 280px;
-                .content {
-                    padding: 20px;
-                }
+            .fa {
+                color: $colorRed1;
             }
+            padding: 15px 0;
+            text-align: right;
+            font-size: .8rem;
+            margin: 20px 0;
         }
-        ul,
-        .feature {
-            display: none;
-        }
-        /* Show Sub nav and Feature on hover */
-        li {
-            &:hover {
-                >ul,
-                >.feature {
-                    display: block;
-                }
-            }
-        }
-        /* Search box */
-        li.search {
-            position: inherit;
-            .close {
-                &:before,
-                &:after {
-                    background: $colorWhite;
-                }
-            }
-            .search-box {
-                background: $colorDarkGreen;
-                position: absolute;
-                left: 0;
-                top: -100%;
-                width: 100%;
-                height: 100%;
-                @include transition(all .3s);
-                &:after {
-                    content: '';
-                    position: absolute;
-                    width: 10px;
-                    height: 100%;
-                    left: 100%;
-                    top: 0;
-                    background: $colorDarkGreen;
-                }
-                input[type="text"] {
-                    margin-bottom: 0;
-                    width: 90%;
-                    font-family: $font-rw;
-                    @include font-size(18px);
-                    text-transform: uppercase;
-                    padding: 0;
-                    background: none;
-                    color: $colorWhite;
-                    @include placeholder {
-                        color: $colorWhite;
-                        font-family: $font-rw;
-                        @include font-size(18px);
-                        text-transform: uppercase;
-                    }
-                }
-                .search-btn {
-                    display: inline-block;
-                    margin-top: 1px;
-                    font-size: 18px;
-                    margin-right: 10px;
-                    &:hover {
-                        color: $colorOrange;
-                    }
-                }
-                &.active {
-                    top: 0;
-                }
-            }
-        }
-        @include max-screen(1530px) {
-            padding-right: 0;
-        }
-        @include max-screen($xlg) {
-            padding-right: 0;
-        }
-        @include max-screen($lg) {
-            display: none;
+        @include max-screen($lg){
+        	.title-text{
+        		display:none;
+        	}
+        	.contact-text{
+        		display:none;
+        	}
         }
     }
 
-    /* Large Header Style */
-    >.container-fluid >.row >[class*="col-"] {
-        height: 129px;
-        @include transition(all .3s);
-    }
-    .logo {
-        position: relative;
-        @include transition(all .3s);
-        img {
-            width: 180px;
-            height: 100%;
-            @include transition(all .3s);
-        }
-        .slogan {
-            display: inline-block;
-            float: right;
-            @include font-size(12px);
-            color: $colorDarkGrey;
-            border-left: solid 1px $colorLightGrey4;
-            padding-left: 10px;
-            margin-left: 10px;
-            position: relative;
-            top: 21px;
-            line-height: 150%;
-        }
-        @include max-screen($lg) {
-            img {
-                // width: 141px!important;
-                // height: 40px!important;
-            }
-            .slogan {
-                display: none;
-            }
-        }
-    }
-    /* Main Menu */
-    ul.top-nav {
-        >li {
-            >a {
-                padding-top: 52px;
-                padding-bottom: 52px;
-                @include transition(all .3s);
-                @include max-screen($xlg) {
-                    padding-top: 54px;
-                    padding-bottom: 53px;
-                }
-                @include max-screen(1100px) {
-                    padding-top: 54px;
-                    padding-bottom: 54px;
-                }
-            }
-        }
-    }
-    @include max-screen($lg) {
-        height: 50px;
-        [class*="col-"] {
-            height: auto!important;
-        }
-    }
-}
+
+
 
 footer {
     background-color: $colorRed1;
@@ -1578,13 +1307,7 @@ footer {
                         font-family: $font-li;
                     }
         		}
-            // #logo-container {
-            //     margin: auto;
-            //     margin-bottom: 10px;
-            //     width: 200px;
-            //     height: 30px;
-            //     background-image: url('http://placehold.it/200x30/000000/ffffff/&text=BRAND+LOGO');
-            // }
+             
         }
         .right-content {
             background: $colorWhite;
@@ -2177,49 +1900,6 @@ footer {
         }
     }
 }
-
-
-    header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 20vh;
-        border-bottom: 3px solid $colorRed1;
-        background: $colorWhite;
-        .title-text {
-        	padding: 30px 0;
-            h1 {
-                margin-bottom: 5px;
-            }
-            p {
-                font-size: .8rem;
-                font-family: $font-gr;
-                letter-spacing: 2px;
-            }
-        }
-        .contact-text {
-            strong {
-                font-size: 1rem;
-            }
-            .fa {
-                color: $colorRed1;
-            }
-            padding: 15px 0;
-            text-align: right;
-            font-size: .8rem;
-            margin: 20px 0;
-        }
-        @include max-screen($lg){
-        	.title-text{
-        		display:none;
-        	}
-        	.contact-text{
-        		display:none;
-        	}
-        }
-    }
-
 
 
 
