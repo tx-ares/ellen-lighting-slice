@@ -1,5 +1,4 @@
 
-
 function showPage() {
 	"use strict";
 	
@@ -146,13 +145,12 @@ function initToggleActiveClass() {
 
 $(window).load(function () {
 	"use strict";
-
 });
 
 // JavaScript Document
 jQuery(document).ready(function() {
 	"use strict";
-	
+
 	showPage();
 	initToggleActiveClass();
 	
@@ -165,38 +163,3 @@ jQuery(document).ready(function() {
 	initAccordion();
 	RESPONSIVEUI.responsiveTabs();
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
