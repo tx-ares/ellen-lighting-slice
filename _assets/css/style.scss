@@ -647,64 +647,6 @@ figure {
 }
 
 
-/* Table */
-
-table {
-    &.table {
-        margin-bottom: 40px;
-        border-top: solid 3px $colorGreen;
-        border-bottom: solid 3px $colorDarkGreen;
-        tr {
-            td {
-                border-top-color: $colorLightGrey6!important;
-                padding: 15px 0;
-            }
-        }
-        >thead>tr,
-        >tbody>tr,
-        >tr {
-            >td:first-child {
-                padding-left: 10px;
-            }
-        }
-        table {
-            border-top: none;
-            border-bottom: none;
-            margin-bottom: 0;
-            >thead>tr,
-            >tbody>tr,
-            >tr {
-                >td:first-child {
-                    padding-left: inherit;
-                }
-            }
-            tr {
-                &:first-child {
-                    td {
-                        border-top: none;
-                        padding-top: 0;
-                    }
-                }
-                &:last-child {
-                    td {
-                        padding-bottom: 0;
-                    }
-                }
-            }
-        }
-    }
-    thead {
-        @include font-size(14px);
-        font-weight: 700;
-        color: $colorDarkGrey;
-        text-transform: uppercase;
-    }
-    strong {
-        font-weight: 600;
-    }
-}
-
-
 /* ==========================================================================
 
 	4. PAGE STRUCTURE
@@ -717,96 +659,6 @@ table {
 $padding-lg: 50px;
 $padding-md: 40px;
 $padding-sm: 20px;
-.row {
-    margin: 0 -40px;
-    &.compressed {
-        margin: 0;
-        >[class*="col-"] {
-            padding: 0;
-        }
-    }
-    &.row-compressed {
-        margin: 0;
-    }
-    /* Full height column */
-    &.fh-col {
-        height: 100%;
-        >[class*="col-"] {
-            height: 100%;
-        }
-    }
-    /* Half height column */
-    &.hh-col {
-        height: 100%;
-        >[class*="col-"] {
-            height: 50%;
-        }
-    }
-    @include max-screen($lg) {
-        &.fh-col {
-            height: auto;
-            >[class*="col-"] {
-                height: auto;
-            }
-        }
-        /* Half height column */
-        &.hh-col {
-            height: auto;
-            >[class*="col-"] {
-                height: auto;
-            }
-        }
-    }
-    @include max-screen($sm) {
-        &.row-xxs-12 {
-            float: none!important;
-            clear: both!important;
-            width: 100%!important;
-            margin: 0!important;
-            [class*="col-"] {
-                float: none!important;
-                clear: both!important;
-                width: 100%!important;
-                padding-left: 0!important;
-                padding-right: 0!important;
-            }
-        }
-    }
-}
-
-[class*="col-"] {
-    padding-left: 40px;
-    padding-right: 40px;
-}
-
-.col-centered {
-    float: none;
-    margin: 0 auto;
-    padding: 0;
-}
-
-.container-fluid {
-    width: 100%;
-    padding: 0 $padding-lg;
-    @include max-screen($md) {
-        padding: 0 $padding-md;
-    }
-    @include max-screen($sm) {
-        padding: 0 $padding-sm;
-    }
-}
-
-.no-padding {
-    padding: 0;
-}
-
-.is-table-row {
-    display: table;
-    >[class*="col-"] {
-        float: none;
-        display: table-cell;
-    }
-}
 
 
 /*  Utilities Sizes (Height and Width) */
@@ -841,6 +693,10 @@ $padding-sm: 20px;
 
 .pos-rel {
     position: relative;
+}
+
+.no-padding {
+    padding: 0;
 }
 
 
@@ -884,56 +740,6 @@ $padding-sm: 20px;
     }
 }
 
-.close {
-    top: 3px;
-    position: relative;
-    display: inline-block;
-    width: 17px;
-    height: 17px;
-    overflow: hidden;
-    &:hover {
-        &::before,
-        &::after {
-            background: $colorDarkGrey;
-        }
-    }
-    &::before,
-    &::after {
-        content: '';
-        position: absolute;
-        height: 3px;
-        width: 100%;
-        top: 50%;
-        left: 0;
-        margin-top: -1px;
-        background: #000;
-    }
-    &::before {
-        @include transform(rotate(45deg));
-    }
-    &::after {
-        @include transform(rotate(-45deg));
-    }
-    &.thick {
-        &::before,
-        &::after {
-            height: 3px;
-            margin-top: -2px;
-        }
-    }
-}
-
-
-/* Opener 3 Line Layout */
-
-.menu-line-style {
-    display: block;
-    cursor: pointer;
-    height: 2px;
-    width: 30px;
-    background: $colorRed2;
-    position: absolute;
-}
 
 /* Main wrapper of the page */
 
@@ -959,17 +765,18 @@ body {
 }
 
 
-    header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 20vh;
-        border-bottom: 3px solid $colorRed1;
-        background: $colorWhite;
-        
+header {
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 12vh;
+   border-bottom: 3px solid $colorRed1;
+   background: $colorWhite;
+        .row {
+            height: 100%;
+        }  
         .title-text {
-        	padding: 30px 0;
+        	padding: 18px 0 0 0;
             h1 {
                 margin-bottom: 5px;
                 font-size: 1.685rem;
@@ -981,29 +788,18 @@ body {
             }
         }
         .contact-text {
+            padding: 20px;
             strong {
                 font-size: 1rem;
             }
             .fa {
                 color: $colorRed1;
             }
-            padding: 15px 0;
             text-align: right;
             font-size: .8rem;
-            margin: 20px 0;
         }
-        @include max-screen($lg){
-        	.title-text{
-        		display:none;
-        	}
-        	.contact-text{
-        		display:none;
-        	}
-        }
-    }
 
-
-
+}
 
 footer {
     background-color: $colorRed1;
@@ -1254,7 +1050,7 @@ footer {
     .main-content {
         // padding-top: 0;
         // padding-bottom: 0;
-        height: 100vh;
+        /*height: 100vh;*/
         .login-container {
         	width:50%;
             position: fixed;
@@ -1920,10 +1716,8 @@ footer {
    ========================================================================== */
 
 .main-content {
-    padding-top: 120px;
-    min-height: 185px;
-    min-height: 500px;
-    line-height: 150%;
+    min-height: 80vh;
+    /*line-height: 150%;*/
     .main {
         >.container-fluid {
             padding-right: 40px;
@@ -2045,154 +1839,6 @@ footer {
     }
 }
 
-.photo-wrapper {
-    .title {
-        @include font-size(18px);
-        font-weight: 700;
-        text-transform: uppercase;
-        color: $colorDarkGreen;
-    }
-    .photos {
-        margin: 0 -20px;
-        a {
-            display: block;
-        }
-        .photo-item {
-            float: left;
-            padding: 0 20px;
-            margin-bottom: 35px;
-            width: 20%;
-            .img-wrapper {
-                margin-bottom: 20px;
-                position: relative;
-                overflow: hidden;
-                img {
-                    display: block;
-                    width: 100%;
-                    height: auto;
-                    position: relative;
-                }
-                &:after {
-                    content: '';
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    height: 5px;
-                    width: 100%;
-                    background: $colorGreen;
-                    z-index: 2;
-                }
-                .overlay {
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                    background: rgba($colorGreen, .85);
-                    @include font-size(24px);
-                    color: $colorWhite;
-                    text-align: center;
-                    top: 100%;
-                    left: 0;
-                    z-index: 1;
-                    @include transition(all .3s);
-                }
-            }
-            &:hover {
-                .img-wrapper {
-                    .overlay {
-                        top: 0;
-                        @include transition(all .3s);
-                    }
-                    img {
-                        @include transform(scale(1.1));
-                        @include transition(all 3s);
-                    }
-                }
-            }
-            &:nth-child(5n+1) {
-                clear: left;
-            }
-        }
-        .info-wrapper {
-            h3 {
-                @include font-size(24px);
-                color: $colorGreen;
-                margin-bottom: 10px;
-                text-transform: inherit;
-                font-weight: 400;
-            }
-            h4 {
-                color: $colorDarkGrey;
-                @include font-size(18px);
-            }
-        }
-        @include max-screen($xxlg) {
-            .photo-item {
-                width: 25%;
-                &:nth-child(5n+1) {
-                    clear: none;
-                }
-                &:nth-child(4n+1) {
-                    clear: left;
-                }
-            }
-        }
-        @include max-screen($xlg) {
-            .photo-item {
-                width: 33.33%;
-                &:nth-child(4n+1) {
-                    clear: none;
-                }
-                &:nth-child(3n+1) {
-                    clear: left;
-                }
-            }
-        }
-        @include max-screen($md) {
-            .photo-item {
-                width: 50%;
-                &:nth-child(3n+1) {
-                    clear: none;
-                }
-                &:nth-child(2n+1) {
-                    clear: left;
-                }
-            }
-        }
-        @include max-screen($xmd) {
-            margin: 0 -15px;
-            .photo-item {
-                width: 33.33%;
-                padding: 0 15px;
-                &:nth-child(2n+1) {
-                    clear: none;
-                }
-                &:nth-child(3n+1) {
-                    clear: left;
-                }
-            }
-        }
-        @include max-screen($sm) {
-            .photo-item {
-                width: 50%;
-                &:nth-child(3n+1) {
-                    clear: none;
-                }
-                &:nth-child(2n+1) {
-                    clear: left;
-                }
-            }
-        }
-        @include max-screen(420px) {
-            .photo-item {
-                width: 100%;
-                float: none;
-                &:nth-child(2n+1) {
-                    clear: none;
-                }
-            }
-        }
-    }
-}
 
 .accordion {
     &.custom {
@@ -2335,4 +1981,9 @@ footer {
 
 .main-col {
     height: 100%;
+}
+
+.logo {
+    height: 100px;
+    width: 200px;
 }
