@@ -137,29 +137,25 @@ function initSideMenuSelect() {
 
     selectedNavLi.on('click', function () {
         console.log(this.getAttribute('id'));
+        var html
         if (this.getAttribute('id') === 'home') {
             console.log("home selected")
-            var html = "<h4> Check a rino!</h4>"
+            html = "<h4> Check a rino!</h4>"
             html += "<p>"
-            html += 'Hopefully this things working...'
-            html += "cuz if it didn't I'd be cheesed off"
+            html += "I'm so good..."
             html += "</p>"
-
-            document.querySelector(".viewer").innerHTML = html
         }
 
         if (this.getAttribute('id') === 'admin') {
-            var html
-            document.querySelector(".viewer").innerHTML = html
-
+            html = "admin view"
         }
 
         if (this.getAttribute('id') === 'reports') {
-            var html
-            document.querySelector(".viewer").innerHTML = html
-
-
+            html = "reports view"
         }
+
+        document.querySelector(".viewer").innerHTML = html
+
     });
 }
 
