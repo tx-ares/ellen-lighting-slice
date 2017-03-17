@@ -140,10 +140,7 @@ function initSideMenuSelect() {
         var html
         if (this.getAttribute('id') === 'home') {
             console.log("home selected")
-            html = "<h4> Check a rino!</h4>"
-            html += "<p>"
-            html += "I'm so good..."
-            html += "</p>"
+            html = "home view"
         }
 
         if (this.getAttribute('id') === 'admin') {

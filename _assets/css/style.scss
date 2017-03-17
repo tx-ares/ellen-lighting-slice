@@ -771,11 +771,13 @@ body {
 }
 header {
    width: 100%;
+   min-width: 994px;
    height: 100px;
    border-bottom: 3px solid $colorRed1;
    background: $colorWhite;
         .row {
             height: 100%;
+            min-width: 994px;
         }  
         .title-text {
         	padding: 18px 0 0 0;
