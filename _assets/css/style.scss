@@ -842,7 +842,7 @@ footer {
             top: 30%;
             left: 20%;
             padding: 30px;
-            @include max-screen($xxlg) {
+            
             	.login {
             	border-top: 10px solid $colorRed1;
             	padding:30px;
@@ -889,7 +889,7 @@ footer {
                     }
         		}
              
-        }
+        
 }
 
 

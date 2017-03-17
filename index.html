@@ -18,15 +18,15 @@
         <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
     <![endif]-->
     <script type="text/javascript">
-    if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
-        var msViewportStyle = document.createElement('style')
-        msViewportStyle.appendChild(
-            document.createTextNode(
-                '@-ms-viewport{width:auto!important}'
+        if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+            var msViewportStyle = document.createElement('style')
+            msViewportStyle.appendChild(
+                document.createTextNode(
+                    '@-ms-viewport{width:auto!important}'
+                )
             )
-        )
-        document.querySelector('head').appendChild(msViewportStyle)
-    }
+            document.querySelector('head').appendChild(msViewportStyle)
+        }
     </script>
     <!-- Pagespeed compliant - Avoid render blocking load of CSS -->
     <!--  <script type="text/javascript">
@@ -119,13 +119,12 @@
                                                     >1281:_assets/images/homebg5.png" src="_assets/images/homebg5.png" />
                 </div>
             </div>
-       
-        <!-- End Slider -->
-        <!-- Begin Login Container -->
-        <div class="login-container">
-            <div class="row">
+
+            <!-- End Slider -->
+            <!-- Begin Login Container -->
+            <div class="login-container">
                 <div class="Absolute-Center is-Responsive">
-                    <div class="login col-sm-12 col-md-10 col-md-offset-1">
+                    <div class="login">
                         <form action="" id="loginForm">
                             <div class="form-group input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
@@ -145,16 +144,15 @@
                     </div>
                 </div>
             </div>
+            <!-- End Login Container -->
         </div>
-        <!-- End Login Container -->
     </div>
-        </div>
     <!-- ******************************************************* -->
     <!-- Footer -->
     <!-- ******************************************************* -->
     <div class="container-fluid no-padding">
-    <footer>
-   
+        <footer>
+
             <div class="row">
                 <div class="col-md-1 col-sm-6 col-xs-12 pull-left text-center">
                     <p>Espanol</p>
@@ -164,8 +162,8 @@
                 </div>
             </div>
 
-        
-    </footer>
+
+        </footer>
     </div>
 
     <!-- Pagespeed compliant - Avoid render blocking load of JS -->
