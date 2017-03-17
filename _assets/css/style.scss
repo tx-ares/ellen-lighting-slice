@@ -842,13 +842,12 @@ footer {
             top: 30%;
             left: 20%;
             padding: 30px;
-            
             	.login {
             	border-top: 10px solid $colorRed1;
             	padding:30px;
             	width: 350px;
             	height: 230px;
-            	box-shadow: 0px 14px 25px -5px;
+            	box-shadow: 0 14px 25px -5px;
             	background: rgba(255,255,255,0.5);
             	}
             }
@@ -881,15 +880,13 @@ footer {
 		            	color: $colorRed1;
 		            }
 		            input[type=text] {
-		            	margin-bottom: 0px;
+		            	margin-bottom: 0;
                         font-family: $font-li;
 		            }
                     input[type=password] {
                         font-family: $font-li;
                     }
-        		}
-             
-        
+        		} 
 }
 
 
@@ -1106,8 +1103,6 @@ footer {
     }
 }
 
-
-
 // New styles
 .side-menu-wrap {
     width: 180px;
@@ -1120,6 +1115,9 @@ footer {
         }
 }
 
+.side-menu {
+    min-height: 745px;
+}
 
 @include max-screen($xxlg) {
     .side-menu {
