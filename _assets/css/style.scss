@@ -764,6 +764,7 @@ body {
 
 body {
     color: $colorDarkGrey;
+    min-width:994px; /* For fluid container desktops and landscape tablet.*/
 }
 
 .header-wrap {
@@ -823,6 +824,9 @@ footer {
         font-size: .7rem;
         margin-bottom: 0;
         font-family: $font-li;
+    }
+    .row {
+        min-width: 994px;
     }
     @include max-screen($sm) {
     	p {
