@@ -45,47 +45,44 @@
     </noscript>
 </head>
 
-<body class="home">
+<body class="admin">
     <noscript>
         <div>Javascript must be enabled for the correct page display</div>
     </noscript>
     <a class="accessibility" href="#main-content" accesskey="S">Skip to Content</a>
-    <div class="container fw fh no-padding">
-        <!-- ******************************************************* -->
-        <!-- Header -->
-        <!-- ******************************************************* -->
-        <header>
-            <div class="row">
-                <div class="col-md-4 nopadding">
-                    <div class="img-responsive">
-                        <!-- <div class="tcell valign-mid"> -->
-                        <!-- <h1 style="margin-bottom:0;"> -->
-                        <a href="#" class="logo">
-                            <img src="_assets/images/logo.jpg" alt="Ellen Lighting" />
-                        </a>
-                        <!-- </h1> -->
-                        <!-- </div> -->
-                    </div>
+    <!-- ******************************************************* -->
+    <!-- Header -->
+    <!-- ******************************************************* -->
+    <div class="container-fluid header-wrap">
+    <header>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="img-responsive">
+                    <a href="#" class="logo">
+                        <img class="logo" src="_assets/images/logo.jpg" alt="Ellen Lighting" />
+                    </a>
                 </div>
-                <div class="col-md-4 text-center title-text">
-                    <h1>WELCOME <strong>STOREMANAGER01</strong></h1>
-                    <p>sub-header</p>
-                </div>
-                <div class="col-md-4 contact-text">
-                    <span><strong><i class="fa fa-phone" aria-hidden="true"></i>713.771.5312</strong></span>
-                    <p>1261 Stafford Rd. Stafford, TX 77489</p>
-                </div>
-
             </div>
+            <div class="col-md-6 text-center title-text">
+                <h1>WELCOME <strong>STOREMANAGER01</strong></h1>
+                <p>sub-header</p>
+            </div>
+            <div class="col-md-3 contact-text">
+                <span><strong><i class="fa fa-phone" aria-hidden="true"></i>713.771.5312</strong></span>
+                <p>1261 Stafford Rd. Stafford, TX 77489</p>
+            </div>
+        </div>
 
-        </header>
-        <!-- ******************************************************* -->
-        <!-- Main Content -->
-        <!-- ******************************************************* -->
-        <div class="main-content">
+    </header>
+        </div>
+    <!-- ******************************************************* -->
+    <!-- Main Content -->
+    <!-- ******************************************************* -->
+    <div class="container-fluid">
+        <div class="main-content-fullpage">
 
             <div class="row">
-                <div class="aside">
+                <div class="col-md-2">
                     <ul>
                         <li>Home</li>
                         <li>Admin</li>
@@ -100,23 +97,24 @@
             </div>
 
         </div>
-        <!-- ******************************************************* -->
-        <!-- Footer -->
-        <!-- ******************************************************* -->
-        <footer>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-1 col-sm-6 col-xs-12 pull-left text-center">
-                        <p>Espanol</p>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12 pull-right text-right">
-                        <p>Residential Supply a division of Ellen Lighting &amp; Hardware &copy; Copyright 2016 </p>
-                    </div>
+    </div> <!-- End Main Container -->
+    <!-- ******************************************************* -->
+    <!-- Footer -->
+    <!-- ******************************************************* -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-1 col-sm-6 col-xs-12 pull-left text-center">
+                    <p>Espanol</p>
                 </div>
-
+                <div class="col-md-6 col-sm-6 col-xs-12 pull-right text-right">
+                    <p>Residential Supply a division of Ellen Lighting &amp; Hardware &copy; Copyright 2016 </p>
+                </div>
             </div>
-        </footer>
-    </div>
+        </div>
+
+    </footer>
+
     <!-- Pagespeed compliant - Avoid render blocking load of JS -->
     <script type="text/javascript">
         function loadJS(e) {
