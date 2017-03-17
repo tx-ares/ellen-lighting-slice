@@ -789,7 +789,6 @@ header {
             }
         }
         .contact-text {
-            padding: 20px;
             strong {
                 font-size: 1rem;
             }
@@ -905,14 +904,7 @@ footer {
                 position: relative;
                 z-index: 1;
             }
-            .slider-width-hack {
-                position: absolute;
-                width: 100%;
-                height: 20px;
-                left: 0;
-                margin: 0;
-                background: black;
-            }
+    
             .news {
                 background: $colorLightGrey3;
                 padding: 30px 0;

@@ -103,26 +103,9 @@ function initSlider() {
    });
 
 
-
-    $(window).trigger('resize');
-
 }
 
-function resizeSlider() {
-    "use strict";
 
-
-    $('.slider').each(function () {
-        var parentWidth = $(this).parent().find('.slider-width-hack').width();
-
-        if (window.matchMedia('only screen and (max-width: 1024px)').matches) {
-            parentWidth = $('body').prop('clientWidth');
-        }
-
-        $(this).width(parentWidth);
-        $(this).slick('slickGoTo', 0, true);
-    });
-}
 
 function initOpenCloseSearch() {
     "use strict";
