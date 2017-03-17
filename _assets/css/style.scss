@@ -946,17 +946,7 @@ footer {
             padding-right: 10px;
         }
     }
-    .social {
-        @include font-size(18px);
-        color: $colorGreen;
-        margin-bottom: 0;
-        a {
-            margin: 0 7px;
-            &:hover {
-                color: $colorDarkGreen;
-            }
-        }
-    }
+    
     @include max-screen($lg) {
         .pull-right {
             float: none!important;
@@ -1112,6 +1102,9 @@ footer {
                 text-align: center;
                 padding:20px 10px;
             }
+            li:hover {
+                background-color: #fff;
+            }
         }
 }
 
@@ -1129,6 +1122,10 @@ footer {
 }
 
 .logo {
-    height: 96px;
+    height: 80px;
     width: 200px;
+}
+
+.img-container {
+    padding: 7px; /*Becareful not to break layout for header, doing so will break slider*/
 }

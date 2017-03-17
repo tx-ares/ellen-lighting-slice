@@ -735,15 +735,6 @@ footer {
     font-size: 1.125rem; }
     .sub-headline span:first-child {
       padding-right: 10px; }
-  .sub-headline .social {
-    font-size: 18px;
-    font-size: 1.125rem;
-    color: #00aa66;
-    margin-bottom: 0; }
-    .sub-headline .social a {
-      margin: 0 7px; }
-      .sub-headline .social a:hover {
-        color: #00492c; }
   @media only screen and (max-width: 1024px) {
     .sub-headline .pull-right {
       float: none !important; } }
@@ -867,6 +858,8 @@ footer {
   .side-menu-wrap .side-menu li {
     text-align: center;
     padding: 20px 10px; }
+  .side-menu-wrap .side-menu li:hover {
+    background-color: #fff; }
 
 .side-menu {
   min-height: 745px; }
@@ -878,7 +871,11 @@ footer {
   height: 100%; }
 
 .logo {
-  height: 96px;
+  height: 80px;
   width: 200px; }
+
+.img-container {
+  padding: 7px;
+  /*Becareful not to break layout for header, doing so will break slider*/ }
 
 /*# sourceMappingURL=style.css.map */
