@@ -708,7 +708,7 @@ footer {
 .breadcrumb {
   min-height: 24px;
   padding: 2px 0;
-  background-color: #f4f4f4; }
+  background-color: #dbd8cf; }
   .breadcrumb p {
     text-align: right;
     float: right;
@@ -862,9 +862,15 @@ footer {
       .responsive-tabs-wrapper .responsive-tabs__panel.responsive-tabs__panel--active {
         padding-top: 0; } }
 
-.side-col {
-  height: 100%; }
+.side-menu-wrap {
+  background-color: #959595; }
+  .side-menu-wrap .side-menu li {
+    text-align: center;
+    padding: 20px 10px; }
 
+@media only screen and (max-width: 1440px) {
+  .side-menu {
+    min-height: 745px; } }
 .main-col {
   height: 100%; }
 

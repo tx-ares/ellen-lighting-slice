@@ -916,7 +916,7 @@ footer {
 .breadcrumb {
     min-height: 24px;
     padding: 2px 0;
-    background-color: $colorLightGrey1;
+    background-color: $colorLightGrey3;
         p {
             text-align: right;
             float: right;
@@ -1107,11 +1107,24 @@ footer {
 }
 
 
-// New styles 
-.side-col {
-    height: 100%;
+
+// New styles
+.side-menu-wrap {
+     background-color: $colorLightGrey5;
+        .side-menu {
+            li {
+                text-align: center;
+                padding:20px 10px;
+            }
+        }
 }
 
+
+@include max-screen($xxlg) {
+    .side-menu {
+        min-height: 745px;
+    }
+}
 .main-col {
     height: 100%;
 }
