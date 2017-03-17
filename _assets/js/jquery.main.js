@@ -105,8 +105,6 @@ function initSlider() {
 
 }
 
-
-
 function initOpenCloseSearch() {
     "use strict";
 
