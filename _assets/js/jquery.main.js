@@ -136,7 +136,18 @@ function initSideMenuSelect() {
     var selectedNavLi = $('.side-menu > li')
 
     selectedNavLi.on('click', function () {
-        console.log("Ya clicked meh!", this)
+        console.log(this.getAttribute('id'));
+        if (this.getAttribute('id') === 'home') {
+            $('.viewer').innerHTML = '<h4>test home</h4>'
+        }
+
+        if (this.getAttribute('id') === 'admin') {
+
+        }
+
+        if (this.getAttribute('id') === 'reports') {
+
+        }
     });
 }
 
