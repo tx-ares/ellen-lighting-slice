@@ -648,7 +648,7 @@ footer {
 .main-content {
   padding-top: 0;
   padding-bottom: 0;
-  /*height: 100vh;*/ }
+  min-height: 500px; }
   .main-content .login-container {
     width: 50%;
     position: fixed;
@@ -705,15 +705,23 @@ footer {
     .main-content-fullpage .main-content {
       padding-bottom: 0; } }
 
+.breadcrumb {
+  min-height: 24px;
+  padding: 2px 0;
+  background-color: #f4f4f4; }
+  .breadcrumb p {
+    text-align: right;
+    float: right;
+    font-family: "Lato Light", sans-serif;
+    color: #970f0f;
+    font-weight: 700;
+    font-size: .8rem; }
+
 /* ==========================================================================
 
 	5. CUSTOM STYLES
 			
    ========================================================================== */
-.main-content {
-  min-height: 500px;
-  /*line-height: 150%;*/ }
-
 .sub-headline {
   border-top: solid 2px #00492c;
   border-bottom: solid 3px #e5e5e5;

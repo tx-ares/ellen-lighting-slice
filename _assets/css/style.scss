@@ -835,7 +835,7 @@ footer {
 .main-content {     
      padding-top: 0;     
      padding-bottom: 0;
-        /*height: 100vh;*/
+     min-height: 500px;
         .login-container {
         	width:50%;
             position: fixed;
@@ -904,8 +904,6 @@ footer {
         }
 }
 
-
-
 .main-content-fullpage {
     .main-content {
         padding-top: 0;
@@ -915,18 +913,25 @@ footer {
     }
 }
 
+.breadcrumb {
+    min-height: 24px;
+    padding: 2px 0;
+    background-color: $colorLightGrey1;
+        p {
+            text-align: right;
+            float: right;
+            font-family: $font-ll;
+            color: $colorRed1;
+            font-weight: 700;
+            font-size: .8rem;
+        }
+}
 
 /* ==========================================================================
 
 	5. CUSTOM STYLES
 			
    ========================================================================== */
-
-.main-content {
-    min-height: 500px;
-    /*line-height: 150%;*/   
-}
-
 
 
 .sub-headline {
