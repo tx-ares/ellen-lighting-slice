@@ -131,6 +131,14 @@ function initToggleActiveClass() {
     });
 }
 
+function initSideMenuSelect() {
+
+    var selectedNavLi = $('.side-menu > li')
+
+    selectedNavLi.on('click', function () {
+        console.log("Ya clicked meh!", this)
+    });
+}
 
 $(window).load(function () {
     "use strict";
@@ -150,4 +158,6 @@ jQuery(document).ready(function () {
     initSlider();
     initAccordion();
     RESPONSIVEUI.responsiveTabs();
+
+    initSideMenuSelect();
 });

@@ -1096,7 +1096,8 @@ footer {
 // New styles
 .side-menu-wrap {
     width: 180px;
-     background-color: $colorLightGrey5;
+    display: inline-block;
+    background-color: $colorLightGrey5;
         .side-menu {
             li {
                 text-align: center;
@@ -1119,6 +1120,8 @@ footer {
 }
 .main-col {
     height: 100%;
+    width: auto;
+    display: inline-block;
 }
 
 .logo {
