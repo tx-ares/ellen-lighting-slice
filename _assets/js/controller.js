@@ -14,7 +14,9 @@ function sideMenuRouter() { // View Controller
             html += '<div id="barchartContainer"></div>'
             html += '</div>' //close col-33
             html += '<div class="col-33">'
-            html += "check-a-rino"
+            html += '<span class="order-num"> 28 </span>'
+            html += '<br />'
+            html += '<span class="order-sub"> Orders this Month </span>'
             html += '</div>' //close col-33
             html += '<div class="col-33">'
             html += '<div id="piechartContainer"></div>'
@@ -24,7 +26,7 @@ function sideMenuRouter() { // View Controller
 
             document.querySelector(".viewer").innerHTML = html;
 
-            function chartcreator() {
+            function chartcreator() { // Refactor later for all charts to be in array, then use forEach to use .render(); 
                 var barchart = new CanvasJS.Chart("barchartContainer", {
                     title: {
                         horizontalAlign: "right"
@@ -132,9 +134,6 @@ function sideMenuRouter() { // View Controller
 
                 var piechart = new CanvasJS.Chart("piechartContainer", {
                     theme: "theme2",
-                    title: {
-                        text: "Gaming Consoles Sold in 2012"
-                    },
                     data: [{
                         type: "pie",
                         showInLegend: true,
@@ -142,13 +141,10 @@ function sideMenuRouter() { // View Controller
                         yValueFormatString: "#,##0,,.## Million",
                         legendText: "{indexLabel}",
                         dataPoints: [
-                            { y: 4181563, indexLabel: "PlayStation 3" },
-                            { y: 2175498, indexLabel: "Wii" },
-                            { y: 3125844, indexLabel: "Xbox 360" },
-                            { y: 1176121, indexLabel: "Nintendo DS" },
-                            { y: 1727161, indexLabel: "PSP" },
-                            { y: 4303364, indexLabel: "Nintendo 3DS" },
-                            { y: 1717786, indexLabel: "PS Vita" }
+                            { y: 4181563, indexLabel: "", color: "#970f0f " },
+                            { y: 2175498, indexLabel: "", color: "#eb2020 "},
+                            { y: 3125844, indexLabel: "", color: "#878686 "},
+                            { y: 1176121, indexLabel: "", color: "#c2c2c2 "}
                         ]
                     }]
                 });

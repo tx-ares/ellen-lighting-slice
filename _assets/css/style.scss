@@ -239,7 +239,7 @@ hr {
 }
 .col-33 {
     display: inline-block;
-    min-width: 200px;
+    min-width: 225px;
     width:33%;
 }
 
@@ -1169,4 +1169,9 @@ footer {
 
 a.canvasjs-chart-credit {
     opacity: 0;
+}
+
+.order-num {
+    font-style: 28px;
+    letter-spacing: 2px;
 }
