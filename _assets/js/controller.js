@@ -11,21 +11,21 @@ function sideMenuRouter() { // View Controller
             html = '<div class="nobs-container">'
             html += '<div class="nobs-row">'
             html += '<div class="col-33">'
-            html += '<div id="chartContainer"></div>'
-            html += '</div>' //close col-3-md
+            html += '<div id="barchartContainer"></div>'
+            html += '</div>' //close col-33
             html += '<div class="col-33">'
             html += "check-a-rino"
-            html += '</div>' //close col-3-md
+            html += '</div>' //close col-33
             html += '<div class="col-33">'
-            html += "check-a-rino"
-            html += '</div>' //close col-3-md
+            html += '<div id="piechartContainer"></div>'
+            html += '</div>' //close col-33
             html += '</div>' // close row
             html += '</div>' // close container
 
             document.querySelector(".viewer").innerHTML = html;
 
-               function chartcreate() {
-                var chart = new CanvasJS.Chart("chartContainer", {
+            function chartcreator() {
+                var barchart = new CanvasJS.Chart("barchartContainer", {
                     title: {
                         horizontalAlign: "right"
                     },
@@ -130,9 +130,34 @@ function sideMenuRouter() { // View Controller
                     ]
                 });
 
-                chart.render();
+                var piechart = new CanvasJS.Chart("piechartContainer", {
+                    theme: "theme2",
+                    title: {
+                        text: "Gaming Consoles Sold in 2012"
+                    },
+                    data: [{
+                        type: "pie",
+                        showInLegend: true,
+                        toolTipContent: "{y} - #percent %",
+                        yValueFormatString: "#,##0,,.## Million",
+                        legendText: "{indexLabel}",
+                        dataPoints: [
+                            { y: 4181563, indexLabel: "PlayStation 3" },
+                            { y: 2175498, indexLabel: "Wii" },
+                            { y: 3125844, indexLabel: "Xbox 360" },
+                            { y: 1176121, indexLabel: "Nintendo DS" },
+                            { y: 1727161, indexLabel: "PSP" },
+                            { y: 4303364, indexLabel: "Nintendo 3DS" },
+                            { y: 1717786, indexLabel: "PS Vita" }
+                        ]
+                    }]
+                });
+
+                barchart.render();
+                piechart.render();
+
             }
-            chartcreate();
+            chartcreator();
             console.log("chart rendered!")
 
         }
