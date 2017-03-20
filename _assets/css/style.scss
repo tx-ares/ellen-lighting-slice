@@ -239,7 +239,7 @@ hr {
 }
 .col-33 {
     display: inline-block;
-    min-width: 225px;
+    min-width: 200px;
     width:33%;
 }
 
@@ -1172,6 +1172,7 @@ a.canvasjs-chart-credit {
 }
 
 .order-num {
-    font-style: 28px;
+    font-size: 28px;
+    color: $colorRed1;
     letter-spacing: 2px;
 }

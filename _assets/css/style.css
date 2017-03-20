@@ -161,7 +161,7 @@ hr {
 
 .col-33 {
   display: inline-block;
-  min-width: 225px;
+  min-width: 200px;
   width: 33%; }
 
 /* Blockquote */
@@ -910,7 +910,8 @@ a.canvasjs-chart-credit {
   opacity: 0; }
 
 .order-num {
-  font-style: 28px;
+  font-size: 28px;
+  color: #970f0f;
   letter-spacing: 2px; }
 
 /*# sourceMappingURL=style.css.map */
