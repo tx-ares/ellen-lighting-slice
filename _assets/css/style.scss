@@ -764,21 +764,27 @@ body {
 
 body {
     color: $colorDarkGrey;
-    min-width:994px; /* For fluid container desktops and landscape tablet.*/
+    // min-width:1024px; /* For fluid container desktops and landscape tablet.*/
+}
+
+@include max-screen($xlg) {
+    body.home {
+        min-width: 1024px;
+        max-height: 768px;
+    }
 }
 
 .header-wrap {
-    max-height: 100px;  /*Figure out why this breaks slider on home*/
-}
+    max-height: 100px;  
 header {
    width: 100%;
-   min-width: 994px;
+   // min-width: 994px;
    height: 100px;
    border-bottom: 3px solid $colorRed1;
    background: $colorWhite;
         .row {
             height: 100%;
-            min-width: 994px;
+            // min-width: 994px;
         }  
         .title-text {
         	padding: 18px 0 0 0;
@@ -826,7 +832,7 @@ footer {
         font-family: $font-li;
     }
     .row {
-        min-width: 994px;
+        // min-width: 994px;
     }
     @include max-screen($sm) {
     	p {
@@ -885,6 +891,8 @@ footer {
 		            a {
 		            	font-size: .8rem;
 		            	color: $colorRed1;
+                        float: right;
+                        padding: 5px 0 15px;
 		            }
 		            input[type=text] {
 		            	margin-bottom: 0;
@@ -892,8 +900,12 @@ footer {
 		            }
                     input[type=password] {
                         font-family: $font-li;
+                        margin-bottom:0;
                     }
-        		} 
+        		}
+               .form-group.input-group:nth-child(2) {
+                    margin-bottom: 0px;
+                } 
 }
 
 

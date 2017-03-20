@@ -2,3 +2,4 @@
 // @koala-append "lib.js"
 // @koala-append "jquery.main.js"
 // @koala-append "jshelper.js"
+// @koala-append "controller.js"
