@@ -229,6 +229,19 @@ hr {
     display: block;
 }
 
+/* Non-Bootstrap Styles */
+.nobs-container {
+    width: 100%;
+}
+.nobs-row {
+    width: 100%;
+    padding: 10px;
+}
+.col-33 {
+    display: inline-block;
+    width: 33.33%;
+}
+
 
 /* Blockquote */
 
@@ -1151,4 +1164,8 @@ footer {
 
 .img-container {
     padding: 7px; /*Becareful not to break layout for header, doing so will break slider*/
+}
+
+a.canvasjs-chart-credit {
+    opacity: 0;
 }

@@ -8,25 +8,38 @@ function sideMenuRouter() { // View Controller
         if (this.getAttribute('id') === 'home') {
             console.log("home selected")
 
-            html = '<div id="chartContainer"></div>'
+            html = '<div class="nobs-container">'
+            html += '<div class="nobs-row">'
+            html += '<div class="col-33">'
+            html += '<div id="chartContainer"></div>'
+            html += '</div>' //close col-3-md
+            html += '<div class="col-33">'
+            html += "check-a-rino"
+            html += '</div>' //close col-3-md
+            html += '<div class="col-33">'
+            html += "check-a-rino"
+            html += '</div>' //close col-3-md
+            html += '</div>' // close row
+            html += '</div>' // close container
+
             document.querySelector(".viewer").innerHTML = html;
 
-            function chartcreate() {
+               function chartcreate() {
                 var chart = new CanvasJS.Chart("chartContainer", {
                     title: {
-                        text: "Composition of Internet Traffic in North America",
                         horizontalAlign: "right"
                     },
                     axisX: {
                         tickThickness: 0,
                         interval: 1,
-                        intervalType: "year"
+                        intervalType: "month"
                     },
                     animationEnabled: true,
                     toolTip: {
                         shared: true
                     },
                     axisY: {
+                        title: "Amount ($)",
                         lineThickness: 0,
                         tickThickness: 0,
                         interval: 20
@@ -37,48 +50,80 @@ function sideMenuRouter() { // View Controller
                     },
 
                     data: [{
-                            name: "Real-Time",
-                            showInLegend: true,
+                            // name: "Real-Time",
+                            showInLegend: false,
                             type: "stackedColumn100",
-                            color: "#004B8D ",
+                            color: "#970f0f ",
                             dataPoints: [
-                                { x: new Date(2009, 0), y: 30 },
-                                { x: new Date(2010, 0), y: 40 },
-                                { x: new Date(2011, 0), y: 50 },
-                                { x: new Date(2012, 0), y: 60 }
+                                { x: new Date(1), y: 30 },
+                                { x: new Date(2), y: 40 },
+                                { x: new Date(3), y: 50 },
+                                { x: new Date(4), y: 60 },
+                                { x: new Date(5), y: 60 },
+                                { x: new Date(6), y: 60 },
+                                { x: new Date(7), y: 60 },
+                                { x: new Date(8), y: 60 },
+                                { x: new Date(9), y: 60 },
+                                { x: new Date(10), y: 60 },
+                                { x: new Date(11), y: 60 },
+                                { x: new Date(12), y: 60 }
                             ]
                         }, {
-                            name: "Web Browsing",
-                            showInLegend: true,
+                            // name: "Web Browsing",
+                            showInLegend: false,
                             type: "stackedColumn100",
-                            color: "#0074D9 ",
+                            color: "#eb2020 ",
                             dataPoints: [
-                                { x: new Date(2009, 0), y: 40 },
-                                { x: new Date(2010, 0), y: 28 },
-                                { x: new Date(2011, 0), y: 18 },
-                                { x: new Date(2012, 0), y: 12 }
+                                { x: new Date(1), y: 30 },
+                                { x: new Date(2), y: 40 },
+                                { x: new Date(3), y: 50 },
+                                { x: new Date(4), y: 60 },
+                                { x: new Date(5), y: 60 },
+                                { x: new Date(6), y: 60 },
+                                { x: new Date(7), y: 60 },
+                                { x: new Date(8), y: 60 },
+                                { x: new Date(9), y: 60 },
+                                { x: new Date(10), y: 60 },
+                                { x: new Date(11), y: 60 },
+                                { x: new Date(12), y: 60 }
                             ]
                         }, {
-                            name: "File Sharing",
-                            showInLegend: true,
+                            // name: "File Sharing",
+                            showInLegend: false,
                             type: "stackedColumn100",
-                            color: "#4192D9 ",
+                            color: "#878686 ",
                             dataPoints: [
-                                { x: new Date(2009, 0), y: 15 },
-                                { x: new Date(2010, 0), y: 15 },
-                                { x: new Date(2011, 0), y: 12 },
-                                { x: new Date(2012, 0), y: 10 }
+                                { x: new Date(1), y: 30 },
+                                { x: new Date(2), y: 40 },
+                                { x: new Date(3), y: 50 },
+                                { x: new Date(4), y: 60 },
+                                { x: new Date(5), y: 60 },
+                                { x: new Date(6), y: 60 },
+                                { x: new Date(7), y: 60 },
+                                { x: new Date(8), y: 60 },
+                                { x: new Date(9), y: 60 },
+                                { x: new Date(10), y: 60 },
+                                { x: new Date(11), y: 60 },
+                                { x: new Date(12), y: 60 }
                             ]
                         }, {
-                            name: "Other",
-                            showInLegend: true,
+                            // name: "Other",
+                            showInLegend: false,
                             type: "stackedColumn100",
-                            color: "#7ABAF2 ",
+                            color: "#c2c2c2 ",
                             dataPoints: [
-                                { x: new Date(2009, 0), y: 15 },
-                                { x: new Date(2010, 0), y: 17 },
-                                { x: new Date(2011, 0), y: 20 },
-                                { x: new Date(2012, 0), y: 18 }
+                                { x: new Date(1), y: 30 },
+                                { x: new Date(2), y: 40 },
+                                { x: new Date(3), y: 50 },
+                                { x: new Date(4), y: 60 },
+                                { x: new Date(5), y: 60 },
+                                { x: new Date(6), y: 60 },
+                                { x: new Date(7), y: 60 },
+                                { x: new Date(8), y: 60 },
+                                { x: new Date(9), y: 60 },
+                                { x: new Date(10), y: 60 },
+                                { x: new Date(11), y: 60 },
+                                { x: new Date(12), y: 60 }
                             ]
                         }
 
@@ -87,24 +132,25 @@ function sideMenuRouter() { // View Controller
 
                 chart.render();
             }
-
-
             chartcreate();
             console.log("chart rendered!")
-
 
         }
 
         if (this.getAttribute('id') === 'admin') {
             html = "admin view"
+            document.querySelector(".viewer").innerHTML = html;
+
         }
 
         if (this.getAttribute('id') === 'reports') {
             html = "reports view"
+            document.querySelector(".viewer").innerHTML = html;
+
         }
 
         console.log("Routed.")
-        // document.querySelector(".viewer").innerHTML = html
+            // document.querySelector(".viewer").innerHTML = html
 
     });
 }
