@@ -83,12 +83,6 @@
     <!-- Main Content -->
     <!-- ******************************************************* -->
 
-        
-@{
-    ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_Layout.cshtml";
-}
-
 <script src="~/Scripts/jquery.min.js"></script>
 <script src="~/Scripts/kendo/jszip.min.js"></script>
 <script src="~/Scripts/kendo/kendo.all.min.js"></script>
@@ -102,14 +96,15 @@
     <!-- ******************************************************* -->
     <!-- Main Content -->
     <!-- ******************************************************* -->
+
 <div class="container-fluid main-content">
     <div class="row">
         <div class="col-md-3 no-padding side-menu-wrap">
-            <ul class="side-menu">
-                <li>@Html.ActionLink("HOME", "Index", "Home", new { area = "" }, new { })</li>
-                <li>@Html.ActionLink("ADMIN", "Index", "Admin", new { area = "" }, new { })</li>
-                <li>@Html.ActionLink("REPORTS", "Index", "Reports", new { area = "" }, new { })</li>
-            </ul>
+             <ul class="side-menu">
+                        <li id="home">Home</li>
+                        <li id="admin">Admin</li>
+                        <li id="reports">Reports</li>
+                    </ul>
         </div>
 
         <div class="col-md-9 main-col">
