@@ -135,7 +135,9 @@ function createFormLink() {
             $('#new-dialog').fadeIn('slow/400/fast', function() {
 				$(this).css('display', 'block')
 				//jquery ui draggable
-				$(this).draggable();
+				$(this).draggable(
+					// { containment: "body", scroll: false }
+					);
 				$('#new-dialog').load('_assets/views/forms/createform.html', function() {
 					console.log("Pop up rendered!")
 				})

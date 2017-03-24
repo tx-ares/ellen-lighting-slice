@@ -368,13 +368,15 @@ img[src] {
 
 /* Forms */
 
-form {
+.form-horizontal {
     margin-bottom: 40px;
     box-shadow: 0 7px 11px 0;
     height: 680px;
     width: 600px;
     background: #fff;
     font-family: $font-li;
+    padding: 60px;
+    
     .img-container {
         width: 128px;
         height: 128px;
@@ -393,9 +395,7 @@ form {
     .checkbox {
         display: inline-block;
     }
-    .form-horizontal {
-        padding: 20px 60px;
-    }
+   
     input[name="Title"] {
         width: 100%;
     }
@@ -415,6 +415,25 @@ form {
     position: absolute;
     top: 0;
     left: 0;
+    p {
+        margin-bottom: 0;
+        display: inline-block;
+    }
+    .fa {
+        // background: $colorRed1;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 45px;
+        width: 45px;
+        text-align: center;
+        padding: 15px 15px;
+        // font-size: normal;
+        // color: #fff;
+    }
+    .fa:hover {
+        // background: $colorRed2;
+    }
 }
 
 
@@ -998,6 +1017,9 @@ footer {
     .side-menu {
         min-height: 745px;
     }
+    .viewer {
+        min-width: 1206px;
+    }
 }
 
 .main-col {
@@ -1072,11 +1094,10 @@ a.canvasjs-chart-credit {
 /* Create Link Modals */
 
 div#new-dialog {
-    box-shadow: 31px 35px 15px -33px;
-    height: 680px;
-    width: 600px;
-    background: #fff;
-    padding: 65px 40px 0px 40px;
+
+    height: auto;
+    width: auto;
+
 }
 
 .ui-dialog-titlebar.ui-widget-header.ui-corner-all.ui-helper-clearfix.ui-draggable-handle {

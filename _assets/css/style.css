@@ -281,31 +281,30 @@ img[src] {
   visibility: visible; }
 
 /* Forms */
-form {
+.form-horizontal {
   margin-bottom: 40px;
   box-shadow: 0 7px 11px 0;
   height: 680px;
   width: 600px;
   background: #fff;
-  font-family: "Lato Light Italic", sans-serif; }
-  form .img-container {
+  font-family: "Lato Light Italic", sans-serif;
+  padding: 60px; }
+  .form-horizontal .img-container {
     width: 128px;
     height: 128px;
     display: inline-block; }
-  form img {
+  .form-horizontal img {
     width: 100%;
     height: auto; }
-  form .row {
+  .form-horizontal .row {
     margin: 0 -10px; }
-    form .row > [class*="col-"] {
+    .form-horizontal .row > [class*="col-"] {
       padding: 0 10px; }
-  form .checkbox {
+  .form-horizontal .checkbox {
     display: inline-block; }
-  form .form-horizontal {
-    padding: 20px 60px; }
-  form input[name="Title"] {
+  .form-horizontal input[name="Title"] {
     width: 100%; }
-  form input[name="Description"] {
+  .form-horizontal input[name="Description"] {
     width: 100%; }
 
 .form-title {
@@ -319,6 +318,17 @@ form {
   position: absolute;
   top: 0;
   left: 0; }
+  .form-title p {
+    margin-bottom: 0;
+    display: inline-block; }
+  .form-title .fa {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    padding: 15px 15px; }
 
 /* Input Reset */
 /* Input Focus Reset */
@@ -794,7 +804,10 @@ footer {
 
 @media only screen and (max-width: 1440px) {
   .side-menu {
-    min-height: 745px; } }
+    min-height: 745px; }
+
+  .viewer {
+    min-width: 1206px; } }
 .main-col {
   height: 100%;
   /*width: auto;*/
@@ -849,11 +862,8 @@ a.canvasjs-chart-credit {
 
 /* Create Link Modals */
 div#new-dialog {
-  box-shadow: 31px 35px 15px -33px;
-  height: 680px;
-  width: 600px;
-  background: #fff;
-  padding: 65px 40px 0px 40px; }
+  height: auto;
+  width: auto; }
 
 .ui-dialog-titlebar.ui-widget-header.ui-corner-all.ui-helper-clearfix.ui-draggable-handle {
   background: #c2c2c2;
