@@ -1,6 +1,7 @@
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js" type="text/javascript"></script> -->
-<div class="form-title"><p>Create Product</p><a class="close-btn" href="#"><i class="fa fa-times" aria-hidden="true"></i></a></div>
+<div class="form-title">
+    <p>Create Product</p><a class="cancel-button" href="#"><i class="fa fa-times" aria-hidden="true"></i></a></div>
 <div class="form-horizontal">
     <div class="form-group">
         <div class="col-sm-4">
@@ -14,56 +15,60 @@
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-md-2">Product Name</label>
-        <div class="col-md-10">
+        <label class="control-label col-md-4">Product Name</label>
+        <div class="col-md-8">
             <input type="text" name="ProductName" class="form-control k-textbox" />
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-md-2">Unit Price</label>
-        <div class="col-md-10">
+        <label class="control-label col-md-4">Unit Price</label>
+        <div class="col-md-8">
             <input type="text" name="RegularPrice" class="form-control k-textbox" />
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-md-2">Description</label>
-        <div class="col-md-10">
+        <label class="control-label col-md-4">Description</label>
+        <div class="col-md-8">
             <textarea class="form-control"></textarea>
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-md-2">SKU #</label>
-        <div class="col-md-10">
+        <label class="control-label col-md-4">SKU #</label>
+        <div class="col-md-8">
             <input type="text" name="SKUno" class="form-control k-textbox">
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-md-2">Sage Part #</label>
-        <div class="col-md-10">
+        <label class="control-label col-md-4">Sage Part #</label>
+        <div class="col-md-8">
             <input type="text" name="SagePartno" class="form-control k-textbox">
         </div>
     </div>
     <div class="form-group">
-        <div class="col-md-12">
-            <label class="control-label">On Sale</label>
-            <div class="checkbox">
-            </div>
-            @Html.LabelFor(model => model.OnSaleStartDate, "From", htmlAttributes: new { @class = "control-label" }) @Html.ValidationMessageFor(model => model.OnSaleStartDate, "", new { @class = "text-danger" }) @(Html.Kendo().DatePicker() .Name("OnSaleStartDate") .Events(d => d.Change("ValidateOnSaleDate")) .HtmlAttributes(new { style = "width:115px;" }) ) @Html.LabelFor(model => model.OnSaleEndDate, "To", htmlAttributes: new { @class = "control-label" }) @Html.ValidationMessageFor(model => model.OnSaleEndDate, "", new { @class = "text-danger" }) @(Html.Kendo().DatePicker() .Name("OnSaleEndDate") .Events(d => d.Change("ValidateOnSaleDate")) .HtmlAttributes(new { style = "width:115px;" }) )
+        <label class="control-label col-md-4">On Sale
+            <input type="checkbox" name="checkbox">
+        </label>
+        <div class="col-md-8">
+            <label class="control-label">From: </label>
+            <input type="text" class="datepicker" placeholder="mm/dd/yy"><i class="fa fa-calendar" aria-hidden="true"></i>
+
+            <label class="control-label">To: </label>
+            <input type="text" class="datepicker" placeholder="mm/dd/yy"><i class="fa fa-calendar" aria-hidden="true"></i>
+
         </div>
     </div>
     <div class="form-group">
-        @Html.LabelFor(model => model.OnSaleDiscount, "Discount %", htmlAttributes: new { @class = "control-label col-md-2" })
-        <div class="col-md-10">
-            @Html.EditorFor(model => model.OnSaleDiscount, new { htmlAttributes = new { @class = "form-control" } }) @Html.ValidationMessageFor(model => model.OnSaleDiscount, "", new { @class = "text-danger" })
+        <label class="control-label col-md-4">Discount %</label>
+        <div class="col-md-8">
+            <input class="form-control">
         </div>
     </div>
     <div class="form-group">
-        @Html.Label("Upload Datasheet", new { @class = "control-label col-md-2" })
-        <div class="col-md-10">
+        <label class="control-label col-md-4">Datasheet</label>
+        <div class="col-md-8">
             <input type="file" id="Datasheet" name="uploadDatasheet" value="Browse" />
         </div>
     </div>
-    <hr />
     <div class="form-group">
         <div class="col-md-12 text-right">
             <input type="button" value="Cancel" class="btn cancel-button" />
@@ -71,12 +76,11 @@
         </div>
     </div>
 </div>
-}
-<div>
-    @Html.ActionLink("Go to List", "Index", "Product")
-</div>
+
 <script type="text/javascript">
 $(".cancel-button").on("click", function(e) {
     $(this).dialog('close');
 });
+$('.datepicker').datepicker();
+
 </script>

@@ -306,6 +306,10 @@ img[src] {
     width: 100%; }
   .form-horizontal input[name="Description"] {
     width: 100%; }
+  .form-horizontal .control-label {
+    text-align: left; }
+  .form-horizontal .datepicker {
+    max-width: 90px; }
 
 .form-title {
   background: #c2c2c2;
@@ -845,7 +849,8 @@ a.canvasjs-chart-credit {
   text-align: center;
   font-weight: 700;
   letter-spacing: 1px;
-  background-color: #dbd8cf;
+  background-color: #dbd8cf; }
+.createlink p.label:hover, .createlink p.label:focus {
   border-bottom: 4px solid #970f0f; }
 .createlink p.label-red {
   text-align: center;

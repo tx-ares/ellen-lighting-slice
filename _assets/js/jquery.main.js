@@ -131,17 +131,11 @@ function initToggleActiveClass() {
     });
 }
 
-function initFadeClose() {
-    "use strict";
 
-    console.log("initFadeClose")
-    $('.close-btn').click(function(e){
-        e.preventDefault();
-        console.log("Close btn clicked!")
-        $('#new-dialog').fadeOut('slow/400/fast', function() {            
-                $(this).css('display', 'none')
-            })
-    });
+function initDatePicker() {
+    "use strict";
+    console.log("initDatePicker")
+    $('.datepicker').datepicker();
 }
 
 $(window).load(function () {
@@ -157,7 +151,9 @@ jQuery(document).ready(function () {
 
     initLazyLoadImage();
     initAccordion();
-    initFadeClose();
+
+    initDatePicker();
+  
 
     initdataImageBackground();
     initSlider();

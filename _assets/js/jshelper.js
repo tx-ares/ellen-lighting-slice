@@ -141,6 +141,7 @@ function createFormLink() {
 					);
 				$('#new-dialog').load('_assets/views/forms/createform.html', function() {
 					console.log("Pop up rendered!")
+					
 				})
             })
         })

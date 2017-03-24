@@ -376,7 +376,6 @@ img[src] {
     background: #fff;
     font-family: $font-li;
     padding: 60px;
-    
     .img-container {
         width: 128px;
         height: 128px;
@@ -395,12 +394,17 @@ img[src] {
     .checkbox {
         display: inline-block;
     }
-   
     input[name="Title"] {
         width: 100%;
     }
     input[name="Description"] {
         width: 100%;
+    }
+    .control-label {
+        text-align: left;
+    }
+    .datepicker {
+        max-width: 90px;
     }
 }
 
@@ -1071,6 +1075,8 @@ a.canvasjs-chart-credit {
         font-weight: 700;
         letter-spacing: 1px;
         background-color: $colorLightGrey3;
+    }
+    p.label:hover,p.label:focus {
         border-bottom: 4px solid $colorRed1;
     }
     p.label-red {
@@ -1094,10 +1100,8 @@ a.canvasjs-chart-credit {
 /* Create Link Modals */
 
 div#new-dialog {
-
     height: auto;
     width: auto;
-
 }
 
 .ui-dialog-titlebar.ui-widget-header.ui-corner-all.ui-helper-clearfix.ui-draggable-handle {
