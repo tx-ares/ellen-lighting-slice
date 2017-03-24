@@ -396,6 +396,12 @@ form {
     .form-horizontal {
         padding: 20px 60px;
     }
+    input[name="Title"] {
+        width: 100%;
+    }
+    input[name="Description"]{
+        width: 100%;
+    }
     
 }
 
@@ -489,7 +495,7 @@ textarea:-ms-input-placeholder                      { color: $colorDarkGrey; }*/
     &:hover,
     &:focus {
         text-decoration: none;
-        background: $colorLightGrey2;
+        background: $colorRed2;
         color: $colorWhite;
     }
     &.orange {

@@ -18,15 +18,15 @@
         <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
     <![endif]-->
     <script type="text/javascript">
-        if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
-            var msViewportStyle = document.createElement('style')
-            msViewportStyle.appendChild(
-                document.createTextNode(
-                    '@-ms-viewport{width:auto!important}'
-                )
+    if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+        var msViewportStyle = document.createElement('style')
+        msViewportStyle.appendChild(
+            document.createTextNode(
+                '@-ms-viewport{width:auto!important}'
             )
-            document.querySelector('head').appendChild(msViewportStyle)
-        }
+        )
+        document.querySelector('head').appendChild(msViewportStyle)
+    }
     </script>
     <!-- Pagespeed compliant - Avoid render blocking load of CSS -->
     <!--  <script type="text/javascript">
@@ -74,30 +74,28 @@
             </div>
         </header>
     </div>
-
     <div class="breadcrumb">
         <p>Home / Admin</p>
     </div>
-
     <!-- ******************************************************* -->
     <!-- Main Content -->
     <!-- ******************************************************* -->
-
-        <div class="main-content-fullpage">
-                <div class="side-menu-wrap">
-                    <ul class="side-menu">
-                        <li id="home">Home</li>
-                        <li id="admin">Admin</li>
-                        <li id="reports">Reports</li>
-                    </ul>
+    <div class="container-fluid main-content">
+        <div class="row">
+            <div class="col-md-3 no-padding side-menu-wrap">
+                <ul class="side-menu">
+                    <li id="home">Home</li>
+                    <li id="admin">Admin</li>
+                    <li id="reports">Reports</li>
+                </ul>
+            </div>
+            <div class="col-md-9 main-col">
+                <div class="viewer">
+                    <!-- Dynamically loaded content -->
                 </div>
-                <div class="main-col">
-                    <div class="viewer">
-                        <!-- Dynamically loaded content -->
-                    </div>
-                </div>
+            </div>
         </div>
-
+    </div>
     <!-- ******************************************************* -->
     <!-- Footer -->
     <!-- ******************************************************* -->
@@ -113,16 +111,15 @@
             </div>
         </div>
     </footer>
-
     <!-- Pagespeed compliant - Avoid render blocking load of JS -->
     <script type="text/javascript">
-        function loadJS(e) {
-            var t = document.createElement("script");
-            t.type = "text/javascript", t.async = !0, t.src = e;
-            var n = document.getElementsByTagName("head")[0];
-            n.appendChild(t)
-        };
-        loadJS('_assets/js/all.min.js');
+    function loadJS(e) {
+        var t = document.createElement("script");
+        t.type = "text/javascript", t.async = !0, t.src = e;
+        var n = document.getElementsByTagName("head")[0];
+        n.appendChild(t)
+    };
+    loadJS('_assets/js/all.min.js');
     </script>
     <!-- In case javascript is disabled -->
     <noscript>

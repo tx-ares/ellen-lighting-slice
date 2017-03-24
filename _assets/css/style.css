@@ -303,6 +303,10 @@ form {
     display: inline-block; }
   form .form-horizontal {
     padding: 20px 60px; }
+  form input[name="Title"] {
+    width: 100%; }
+  form input[name="Description"] {
+    width: 100%; }
 
 /* Input Reset */
 /* Input Focus Reset */
@@ -414,7 +418,7 @@ textarea:-ms-input-placeholder                      { color: $colorDarkGrey; }*/
   text-decoration: none; }
   .btn:hover, .btn:focus {
     text-decoration: none;
-    background: #e5e5e5;
+    background: #eb2020;
     color: #fff; }
   .btn.orange {
     background: #ff7441; }
