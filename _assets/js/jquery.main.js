@@ -131,6 +131,18 @@ function initToggleActiveClass() {
     });
 }
 
+function initFadeClose() {
+    "use strict";
+
+    console.log("initFadeClose")
+    $('.close-btn').click(function(e){
+        e.preventDefault();
+        console.log("Close btn clicked!")
+        $('#new-dialog').fadeOut('slow/400/fast', function() {            
+                $(this).css('display', 'none')
+            })
+    });
+}
 
 $(window).load(function () {
     "use strict";
@@ -145,6 +157,7 @@ jQuery(document).ready(function () {
 
     initLazyLoadImage();
     initAccordion();
+    initFadeClose();
 
     initdataImageBackground();
     initSlider();
