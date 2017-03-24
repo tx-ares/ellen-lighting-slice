@@ -308,6 +308,18 @@ form {
   form input[name="Description"] {
     width: 100%; }
 
+.form-title {
+  background: #c2c2c2;
+  width: 600px;
+  line-height: 28px;
+  padding: 8px 25px;
+  font-size: .8rem;
+  letter-spacing: 2px;
+  border-bottom: 3px solid #eb2020;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
 /* Input Reset */
 /* Input Focus Reset */
 input[type="text"]:focus,
@@ -836,12 +848,13 @@ a.canvasjs-chart-credit {
     color: #fff; }
 
 /* Create Link Modals */
-/*.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front.ui-draggable {
-    box-shadow: 31px 35px 15px -33px;
-    min-height: 680px;
-    min-width: 600px;
-    background: #fff;
-}*/
+div#new-dialog {
+  box-shadow: 31px 35px 15px -33px;
+  height: 680px;
+  width: 600px;
+  background: #fff;
+  padding: 65px 40px 0px 40px; }
+
 .ui-dialog-titlebar.ui-widget-header.ui-corner-all.ui-helper-clearfix.ui-draggable-handle {
   background: #c2c2c2;
   width: 600px;

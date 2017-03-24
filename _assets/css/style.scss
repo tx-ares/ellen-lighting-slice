@@ -50,14 +50,11 @@ sans-serif;
 $font-os:'Open Sans',
 sans-serif;
 $font-icon:'FontAwesome';
-
 $font-gr:'Georgia',
 sans-serif;
-
-$font-ll:'Lato Light', 
+$font-ll:'Lato Light',
 sans-serif;
-
-$font-li:'Lato Light Italic', 
+$font-li:'Lato Light Italic',
 sans-serif;
 
 /* Extended Classes */
@@ -226,18 +223,22 @@ hr {
     display: block;
 }
 
+
 /* Non-Bootstrap Styles */
+
 .nobs-container {
     width: 100%;
 }
+
 .nobs-row {
     width: 100%;
     padding: 10px;
 }
+
 .col-33 {
     display: inline-block;
     min-width: 220px;
-    width:33%;
+    width: 33%;
 }
 
 
@@ -353,7 +354,7 @@ img.lazy {
 
 img[data-src] {
     visibility: hidden;
-    width:100%;
+    width: 100%;
     @include opacity(0);
     @include transition(all 1s);
 }
@@ -383,7 +384,6 @@ form {
         width: 100%;
         height: auto;
     }
-
     .row {
         margin: 0 -10px;
         >[class*="col-"] {
@@ -399,15 +399,26 @@ form {
     input[name="Title"] {
         width: 100%;
     }
-    input[name="Description"]{
+    input[name="Description"] {
         width: 100%;
     }
-    
+}
+
+.form-title {
+    background: $colorLightGrey6;
+    width: 600px;
+    line-height: 28px;
+    padding: 8px 25px;
+    font-size: .8rem;
+    letter-spacing: 2px;
+    border-bottom: 3px solid $colorRed2;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 
 /* Input Reset */
-
 
 
 /* Input Focus Reset */
@@ -453,8 +464,6 @@ label {
 select {
     padding-left: 12px;
 }
-
-
 
 
 /*
@@ -609,8 +618,6 @@ $padding-lg: 50px;
 $padding-md: 40px;
 $padding-sm: 20px;
 
-
-
 /*  Utilities Sizes (Height and Width) */
 
 .fh {
@@ -647,6 +654,7 @@ $padding-sm: 20px;
 
 
 /* Skeleton of Elements */
+
 
 /*.tframe {
     display: table;
@@ -690,8 +698,7 @@ $padding-sm: 20px;
 /* Main wrapper of the page */
 
 #wrapper {
-    width:100%;
-
+    width: 100%;
     @include transition(padding-top .3s);
     &:before,
     &:after {
@@ -708,7 +715,8 @@ body {
 
 body {
     color: $colorDarkGrey;
-    min-width:1024px; /* For fluid container desktops and landscape tablet.*/
+    min-width: 1024px;
+    /* For fluid container desktops and landscape tablet.*/
 }
 
 @include max-screen($xlg) {
@@ -719,40 +727,41 @@ body {
 }
 
 .header-wrap {
-    max-height: 100px;  
+    max-height: 100px;
 }
+
 header {
-   width: 100%;
-   min-width: 1024px;
-   height: 100px;
-   border-bottom: 3px solid $colorRed1;
-   background: $colorWhite;
-        .row {
-            height: 100%;
-            min-width: 1024px;
-        }  
-        .title-text {
-            padding: 18px 0 0 0;
-            h1 {
-                margin-bottom: 5px;
-                font-size: 1.685rem;
-            }
-            p {
-                font-size: .8rem;
-                font-family: $font-gr;
-                letter-spacing: 2px;
-            }
+    width: 100%;
+    min-width: 1024px;
+    height: 100px;
+    border-bottom: 3px solid $colorRed1;
+    background: $colorWhite;
+    .row {
+        height: 100%;
+        min-width: 1024px;
+    }
+    .title-text {
+        padding: 18px 0 0 0;
+        h1 {
+            margin-bottom: 5px;
+            font-size: 1.685rem;
         }
-        .contact-text {
-            strong {
-                font-size: 1rem;
-            }
-            .fa {
-                color: $colorRed1;
-            }
-            text-align: right;
+        p {
             font-size: .8rem;
+            font-family: $font-gr;
+            letter-spacing: 2px;
         }
+    }
+    .contact-text {
+        strong {
+            font-size: 1rem;
+        }
+        .fa {
+            color: $colorRed1;
+        }
+        text-align: right;
+        font-size: .8rem;
+    }
 }
 
 footer {
@@ -787,82 +796,80 @@ footer {
     .row {
         padding: 6px;
     }
-
 }
-       
-.main-content {     
-     padding-top: 0;     
-     padding-bottom: 0;
-     min-height: 500px;
-        .login-container {
-            width:50%;
-            position: fixed;
-            top: 30%;
-            left: 20%;
+
+.main-content {
+    padding-top: 0;
+    padding-bottom: 0;
+    min-height: 500px;
+    .login-container {
+        width: 50%;
+        position: fixed;
+        top: 30%;
+        left: 20%;
+        padding: 30px;
+        .login {
+            border-top: 10px solid $colorRed1;
             padding: 30px;
-                .login {
-                border-top: 10px solid $colorRed1;
-                padding:30px;
-                width: 350px;
-                height: 230px;
-                box-shadow: 0 14px 25px -5px;
-                background: rgba(255,255,255,0.5);
-                }
-            }
-            div.well {
-                height: 250px;
-            }
-            .Absolute-Center {
-                margin: auto;
-                position: absolute;
-                top: 0;
-                left: 0;
-                bottom: 0;
-                right: 0;
-            }
-            .Absolute-Center.is-Responsive {
-                width: 50%;
-                height: 50%;
-                min-width: 200px;
-                max-width: 400px;
-                padding: 40px;
-            }
-                .form-group{
-                    button {
-                        background-color: $colorRed1;
-                        font-weight: initial;
-                        padding: 8px 0;
-                    }
-                    a {
-                        font-size: .8rem;
-                        color: $colorRed1;
-                        float: right;
-                        padding: 5px 0 15px;
-                    }
-                    input[type=text] {
-                        margin-bottom: 0;
-                        font-family: $font-li;
-                    }
-                    input[type=password] {
-                        font-family: $font-li;
-                        margin-bottom:0;
-                    }
-                }
-               .form-group.input-group:nth-child(2) {
-                    margin-bottom: 0px;
-                } 
+            width: 350px;
+            height: 230px;
+            box-shadow: 0 14px 25px -5px;
+            background: rgba(255, 255, 255, 0.5);
+        }
+    }
+    div.well {
+        height: 250px;
+    }
+    .Absolute-Center {
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+    .Absolute-Center.is-Responsive {
+        width: 50%;
+        height: 50%;
+        min-width: 200px;
+        max-width: 400px;
+        padding: 40px;
+    }
+    .form-group {
+        button {
+            background-color: $colorRed1;
+            font-weight: initial;
+            padding: 8px 0;
+        }
+        a {
+            font-size: .8rem;
+            color: $colorRed1;
+            float: right;
+            padding: 5px 0 15px;
+        }
+        input[type=text] {
+            margin-bottom: 0;
+            font-family: $font-li;
+        }
+        input[type=password] {
+            font-family: $font-li;
+            margin-bottom: 0;
+        }
+    }
+    .form-group.input-group:nth-child(2) {
+        margin-bottom: 0px;
+    }
 }
-
 
 
 /* page layout setup utilities */
 
 .fullpage {
-        height: 100%;
-        width: 100%;
-        @include max-screen($xmd) {
-            height: auto;
-        }
+    height: 100%;
+    width: 100%;
+    @include max-screen($xmd) {
+        height: auto;
+    }
 }
 
 .main-content-fullpage {
@@ -879,22 +886,22 @@ footer {
     padding: 2px 0;
     margin-bottom: 0;
     background-color: $colorLightGrey3;
-        p {
-            text-align: right;
-            float: right;
-            font-family: $font-ll;
-            color: $colorRed1;
-            font-weight: 700;
-            font-size: .8rem;
-        }
+    p {
+        text-align: right;
+        float: right;
+        font-family: $font-ll;
+        color: $colorRed1;
+        font-weight: 700;
+        font-size: .8rem;
+    }
 }
+
 
 /* ==========================================================================
 
     5. CUSTOM STYLES
             
    ========================================================================== */
-
 
 .sub-headline {
     /*border-top: solid 2px $colorDarkGreen;*/
@@ -911,7 +918,6 @@ footer {
             padding-right: 10px;
         }
     }
-    
     @include max-screen($lg) {
         .pull-right {
             float: none!important;
@@ -923,7 +929,6 @@ footer {
         }
     }
 }
-
 
 .accordion {
     &.custom {
@@ -969,22 +974,20 @@ footer {
     }
 }
 
-
-
 // New styles
 .side-menu-wrap {
     width: 180px;
     display: inline-block;
     background-color: $colorLightGrey5;
-        .side-menu {
-            li {
-                text-align: center;
-                padding:20px 10px;
-            }
-            li:hover {
-                background-color: #fff;
-            }
+    .side-menu {
+        li {
+            text-align: center;
+            padding: 20px 10px;
         }
+        li:hover {
+            background-color: #fff;
+        }
+    }
 }
 
 .side-menu {
@@ -996,6 +999,7 @@ footer {
         min-height: 745px;
     }
 }
+
 .main-col {
     height: 100%;
     /*width: auto;*/
@@ -1008,7 +1012,8 @@ footer {
 }
 
 .img-container {
-    padding: 7px; /*Becareful not to break layout for header, doing so will break slider*/
+    padding: 7px;
+    /*Becareful not to break layout for header, doing so will break slider*/
 }
 
 a.canvasjs-chart-credit {
@@ -1023,33 +1028,29 @@ a.canvasjs-chart-credit {
 
 
 /* Icons */
+
 .createlink {
     p {
         text-align: center;
         font-family: $font-ll;
     }
-
     .fa {
-            font-size: 48px;
-        }
-
-        .fa:hover {
-            color: $colorRed1;
-            -moz-transition: 1s all ease;
-            -o-transition: 1s all ease;
-            -webkit-transition: 1s all ease;
-            transition: 1s all ease;
-        }
-
+        font-size: 48px;
+    }
+    .fa:hover {
+        color: $colorRed1;
+        -moz-transition: 1s all ease;
+        -o-transition: 1s all ease;
+        -webkit-transition: 1s all ease;
+        transition: 1s all ease;
+    }
     p.label {
         text-align: center;
         font-weight: 700;
         letter-spacing: 1px;
         background-color: $colorLightGrey3;
         border-bottom: 4px solid $colorRed1;
-        
     }
-
     p.label-red {
         text-align: center;
         font-weight: 700;
@@ -1062,19 +1063,21 @@ a.canvasjs-chart-credit {
             color: #fff;
         }
         a {
-          color: #fff;
+            color: #fff;
         }
-    }   
+    }
 }
+
 
 /* Create Link Modals */
 
-/*.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front.ui-draggable {
+div#new-dialog {
     box-shadow: 31px 35px 15px -33px;
-    min-height: 680px;
-    min-width: 600px;
+    height: 680px;
+    width: 600px;
     background: #fff;
-}*/
+    padding: 65px 40px 0px 40px;
+}
 
 .ui-dialog-titlebar.ui-widget-header.ui-corner-all.ui-helper-clearfix.ui-draggable-handle {
     background: $colorLightGrey6;
@@ -1087,5 +1090,4 @@ a.canvasjs-chart-credit {
     span.ui-dialog-title {
         font-family: $font-gr;
     }
-
 }
