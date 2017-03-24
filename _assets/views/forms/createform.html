@@ -1,22 +1,10 @@
-@model EllenLightingWebsite.Models.ProductViewModel
 
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js" type="text/javascript"></script> -->
 
-@Styles.Render("~/Content/kendo/css")
-@Scripts.Render("~/bundles/jquery")
-@Scripts.Render("~/bundles/kendo")
-@Scripts.Render("~/bundles/jqueryval")
-
-
-@using (Html.BeginForm("ProductCreate", "Home", null, FormMethod.Post, new { enctype = "multipart/form-data" }))
-{
-    @Html.AntiForgeryToken()
 
     <div class="form-horizontal">
-
-        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-
+    <h3>Create Product</h3>
         <div class="form-group">
             <div class="col-sm-4">
                 <div class="img-container">
@@ -30,42 +18,37 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.Title, "Product Name", htmlAttributes: new { @class = "control-label col-md-2" })
+            <label class="control-label col-md-2">Product Name</label>
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Title, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Title, "", new { @class = "text-danger" })
+                <input type="text" name="ProductName" class="form-control k-textbox"/>
             </div>
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.RegularPrice, "Unit Price", htmlAttributes: new { @class = "control-label col-md-2" })
+            <label class="control-label col-md-2">Unit Price</label>
             <div class="col-md-10">
-                @Html.EditorFor(model => model.RegularPrice, new { htmlAttributes = new { @class = "form-control k-textbox" } })
-                @Html.ValidationMessageFor(model => model.RegularPrice, "", new { @class = "text-danger" })
+                <input type="text" name="RegularPrice" class="form-control k-textbox"/>
             </div>
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.Description, htmlAttributes: new { @class = "control-label col-md-2" })
+            <label class="control-label col-md-2">Description</label>
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Description, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+                <textarea class="form-control"></textarea>
             </div>
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.SKUNo, "SKU #", htmlAttributes: new { @class = "control-label col-md-2" })
+            <label class="control-label col-md-2">SKU #</label>
             <div class="col-md-10">
-                @Html.EditorFor(model => model.SKUNo, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.SKUNo, "", new { @class = "text-danger" })
+                <input type="text" name="SKUno" class="form-control k-textbox">
             </div>
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.SagePartNo, "Sage Part #", htmlAttributes: new { @class = "control-label col-md-2" })
+            <label class="control-label col-md-2">Sage Part #</label>
             <div class="col-md-10">
-                @Html.EditorFor(model => model.SagePartNo, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.SagePartNo, "", new { @class = "text-danger" })
+                <input type="text" name="SagePartno" class="form-control k-textbox">
             </div>
         </div>
 
