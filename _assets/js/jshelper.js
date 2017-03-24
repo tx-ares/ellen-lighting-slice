@@ -125,4 +125,19 @@ function chartcreator() { // Refactor later for all charts to be in array, then 
     barchart.render();
     piechart.render();
 
-}
+};
+
+function createFormLink() {
+	console.log("createFormLink init")
+    $('.open-product-dialog').click(
+        function() {
+            console.log("Create link clicked!")
+            $('#new-dialog').fadeIn('slow/400/fast', function() {
+				$(this).css('display', 'block')
+				$('#new-dialog').load('_assets/views/forms/createform.html', function() {
+					console.log("Pop up rendered!")
+				})
+            })
+        })
+};
+

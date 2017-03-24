@@ -132,7 +132,6 @@ function initToggleActiveClass() {
 }
 
 
-
 $(window).load(function () {
     "use strict";
 });

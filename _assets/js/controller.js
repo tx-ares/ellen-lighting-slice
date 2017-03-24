@@ -8,7 +8,8 @@ function sideMenuRouter() { // View Controller
 
             //Uses jshelper file
             $('.viewer').load('_assets/views/sidenav/home.html', function() {
-                chartcreator()
+                chartcreator();
+                createFormLink();
             });
             // chartcreator();
             console.log("chart rendered!")
