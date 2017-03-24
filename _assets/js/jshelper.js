@@ -1,4 +1,5 @@
 ﻿//This file contains helper functions not included in jquery.main.js and are meant to be usable throughout the application.
+
 function chartcreator() { // Refactor later for all charts to be in array, then use forEach to use .render(); 
     var barchart = new CanvasJS.Chart("barchartContainer", {
         title: {
@@ -136,7 +137,7 @@ function createFormLink() {
 				$(this).css('display', 'block')
 				//jquery ui draggable
 				$(this).draggable(
-					{ containment: "body", scroll: false }
+					// { containment: "body", scroll: false }
 					);
 				$('#new-dialog').load('_assets/views/forms/createform.html', function() {
 					console.log("Pop up rendered!")

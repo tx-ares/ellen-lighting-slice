@@ -45,9 +45,8 @@
     </div>
     <div class="form-group">
         <div class="col-md-12">
-            @Html.LabelFor(model => model.OnSale, "On Sale", htmlAttributes: new { @class = "control-label" })
+            <label class="control-label">On Sale</label>
             <div class="checkbox">
-                @Html.CheckBoxFor(model => model.OnSale) @Html.ValidationMessageFor(model => model.OnSale, "", new { @class = "text-danger" })
             </div>
             @Html.LabelFor(model => model.OnSaleStartDate, "From", htmlAttributes: new { @class = "control-label" }) @Html.ValidationMessageFor(model => model.OnSaleStartDate, "", new { @class = "text-danger" }) @(Html.Kendo().DatePicker() .Name("OnSaleStartDate") .Events(d => d.Change("ValidateOnSaleDate")) .HtmlAttributes(new { style = "width:115px;" }) ) @Html.LabelFor(model => model.OnSaleEndDate, "To", htmlAttributes: new { @class = "control-label" }) @Html.ValidationMessageFor(model => model.OnSaleEndDate, "", new { @class = "text-danger" }) @(Html.Kendo().DatePicker() .Name("OnSaleEndDate") .Events(d => d.Change("ValidateOnSaleDate")) .HtmlAttributes(new { style = "width:115px;" }) )
         </div>
