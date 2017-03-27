@@ -840,13 +840,17 @@ footer {
   width: 180px;
   display: inline-block;
   background-color: #959595; }
-  .side-menu-wrap .side-menu li {
-    text-align: center;
-    padding: 20px 10px; }
-  .side-menu-wrap .side-menu li:hover {
-    background-color: #fff; }
-  .side-menu-wrap .side-menu li:focus {
-    background-color: #fff; }
+  .side-menu-wrap .side-menu {
+    font-family: "Georgia", sans-serif; }
+    .side-menu-wrap .side-menu li {
+      text-align: center;
+      padding: 20px 10px;
+      text-transform: uppercase;
+      font-size: .9rem; }
+    .side-menu-wrap .side-menu li:hover {
+      background-color: #fff; }
+    .side-menu-wrap .side-menu li:focus {
+      background-color: #fff; }
 
 .side-menu {
   min-height: 745px; }
@@ -890,37 +894,44 @@ div.t-home .row:last-child {
   margin-top: 120px; }
 
 /* Icons */
-.createlink p {
-  text-align: center;
-  font-family: "Lato Light", sans-serif; }
-.createlink .fa {
-  font-size: 48px; }
-.createlink .fa:hover {
-  color: #970f0f;
-  -moz-transition: 1s all ease;
-  -o-transition: 1s all ease;
-  -webkit-transition: 1s all ease;
-  transition: 1s all ease; }
-.createlink p.label {
-  text-align: center;
-  font-weight: 700;
-  letter-spacing: 1px;
-  background-color: #dbd8cf; }
-.createlink p.label:hover,
-.createlink p.label:focus {
-  border-bottom: 4px solid #970f0f; }
-.createlink p.label-red {
-  text-align: center;
-  font-weight: 700;
-  font-size: .8rem;
-  letter-spacing: 1px;
-  background-color: #970f0f;
-  padding: 5px; }
-  .createlink p.label-red .fa {
-    font-size: 20px;
-    color: #fff; }
-  .createlink p.label-red a {
-    color: #fff; }
+.createlink {
+  width: 52%;
+  margin: 0 auto;
+  font-size: .8rem; }
+  .createlink p {
+    text-align: center;
+    font-family: "Lato Light", sans-serif; }
+  .createlink .fa {
+    font-size: 48px; }
+  .createlink .fa:hover {
+    color: #970f0f;
+    -moz-transition: 1s all ease;
+    -o-transition: 1s all ease;
+    -webkit-transition: 1s all ease;
+    transition: 1s all ease; }
+  .createlink p.label {
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background-color: #dbd8cf;
+    padding: 5px 10px;
+    font-size: .7rem;
+    color: #970f0f; }
+  .createlink p.label:hover,
+  .createlink p.label:focus {
+    border-bottom: 4px solid #970f0f; }
+  .createlink p.label-red {
+    text-align: center;
+    font-weight: 700;
+    font-size: .8rem;
+    letter-spacing: 1px;
+    background-color: #970f0f;
+    padding: 5px; }
+    .createlink p.label-red .fa {
+      font-size: 20px;
+      color: #fff; }
+    .createlink p.label-red a {
+      color: #fff; }
 
 /* Create Link Modals */
 div#new-dialog {

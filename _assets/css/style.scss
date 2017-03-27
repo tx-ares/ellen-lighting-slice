@@ -1057,9 +1057,12 @@ footer {
     display: inline-block;
     background-color: $colorLightGrey5;
     .side-menu {
+        font-family: $font-gr;
         li {
             text-align: center;
             padding: 20px 10px;
+            text-transform: uppercase;
+            font-size: .9rem;
         }
         li:hover {
             background-color: #fff;
@@ -1138,6 +1141,9 @@ div.t-home {
 /* Icons */
 
 .createlink {
+    width: 52%;
+    margin: 0 auto;
+    font-size: .8rem;
     p {
         text-align: center;
         font-family: $font-ll;
@@ -1157,6 +1163,9 @@ div.t-home {
         font-weight: 700;
         letter-spacing: 1px;
         background-color: $colorLightGrey3;
+        padding: 5px 10px;
+        font-size: .7rem;
+        color: $colorRed1;
     }
     p.label:hover,
     p.label:focus {
