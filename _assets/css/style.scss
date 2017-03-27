@@ -1085,7 +1085,6 @@ footer {
 //     width: auto;
 //     display: inline-block;
 // }
-
 .logo {
     height: 80px;
     width: 200px;
@@ -1189,5 +1188,29 @@ div#new-dialog {
     border-bottom: 3px solid $colorRed2;
     span.ui-dialog-title {
         font-family: $font-gr;
+    }
+}
+
+// Admin View Tabs
+#tabs {
+    width: 100%;
+    ul {
+        font-family: $font-gr;
+        letter-spacing: 2px;
+        font-size: .8rem;
+        li {
+            width: 24%;
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 20px 0;
+            background: $colorLightGrey6;
+            color: #fff;
+            text-align: center;
+        }
+        li:focus {
+            background: #fff;
+            color: $colorRed1;
+            transition: .6s all ease;   
+        }
     }
 }

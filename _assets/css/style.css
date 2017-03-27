@@ -854,12 +854,7 @@ footer {
     min-height: 745px; }
 
   .viewer {
-    min-width: 1206px; } }
-.main-col {
-  height: 100%;
-  /*width: auto;*/
-  display: inline-block; }
-
+    min-width: 1440px; } }
 .logo {
   height: 80px;
   width: 200px; }
@@ -935,5 +930,24 @@ div#new-dialog {
   border-bottom: 3px solid #eb2020; }
   .ui-dialog-titlebar.ui-widget-header.ui-corner-all.ui-helper-clearfix.ui-draggable-handle span.ui-dialog-title {
     font-family: "Georgia", sans-serif; }
+
+#tabs {
+  width: 100%; }
+  #tabs ul {
+    font-family: "Georgia", sans-serif;
+    letter-spacing: 2px;
+    font-size: .8rem; }
+    #tabs ul li {
+      width: 24%;
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 20px 0;
+      background: #c2c2c2;
+      color: #fff;
+      text-align: center; }
+    #tabs ul li:focus {
+      background: #fff;
+      color: #970f0f;
+      transition: .6s all ease; }
 
 /*# sourceMappingURL=style.css.map */
