@@ -880,7 +880,8 @@ a.canvasjs-chart-credit {
 
 .order-num-container {
   text-align: center;
-  margin-top: 125px; }
+  margin-top: 125px;
+  color: #970f0f; }
   .order-num-container hr {
     margin: 0.4em 0; }
   .order-num-container .order-num {
@@ -895,7 +896,7 @@ div.t-home .row:last-child {
 
 /* Icons */
 .createlink {
-  width: 52%;
+  width: 70%;
   margin: 0 auto;
   font-size: .8rem; }
   .createlink p {
@@ -926,7 +927,10 @@ div.t-home .row:last-child {
     font-size: .8rem;
     letter-spacing: 1px;
     background-color: #970f0f;
-    padding: 5px; }
+    padding: 5px;
+    width: 35%;
+    display: inline-block;
+    margin: 0 40px; }
     .createlink p.label-red .fa {
       font-size: 20px;
       color: #fff; }
@@ -951,6 +955,8 @@ div#new-dialog {
 
 #tabs {
   width: 100%; }
+  #tabs a {
+    color: #fff; }
   #tabs ul {
     font-family: "Georgia", sans-serif;
     letter-spacing: 2px;
@@ -965,7 +971,8 @@ div#new-dialog {
       text-align: center; }
     #tabs ul li:focus {
       background: #fff;
-      color: #970f0f;
       transition: .6s all ease; }
+      #tabs ul li:focus a {
+        color: #970f0f; }
 
 /*# sourceMappingURL=style.css.map */

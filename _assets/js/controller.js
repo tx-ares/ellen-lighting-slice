@@ -27,8 +27,8 @@ function sideMenuRouter() { // View Controller
         if (this.getAttribute('id') === 'admin') {
             $('.viewer').load('_assets/views/sidenav/admin.html', function() {
 
-                // $("#tabs").tabs();
-                console.log("admin loaded")
+                $("#tabs").tabs();
+                console.log(".tabs() init")
             })
 
 

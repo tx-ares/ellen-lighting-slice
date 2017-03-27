@@ -1119,6 +1119,7 @@ a.canvasjs-chart-credit {
 .order-num-container {
     text-align: center;
     margin-top: 125px;
+    color: $colorRed1;
     hr {
         margin: 0.4em 0;
     }
@@ -1141,7 +1142,7 @@ div.t-home {
 /* Icons */
 
 .createlink {
-    width: 52%;
+    width: 70%;
     margin: 0 auto;
     font-size: .8rem;
     p {
@@ -1178,6 +1179,9 @@ div.t-home {
         letter-spacing: 1px;
         background-color: $colorRed1;
         padding: 5px;
+        width: 35%;
+        display: inline-block;
+        margin: 0 40px;
         .fa {
             font-size: 20px;
             color: #fff;
@@ -1212,6 +1216,9 @@ div#new-dialog {
 // Admin View Tabs
 #tabs {
     width: 100%;
+    a {
+        color: #fff;
+    }
     ul {
         font-family: $font-gr;
         letter-spacing: 2px;
@@ -1227,7 +1234,9 @@ div#new-dialog {
         }
         li:focus {
             background: #fff;
-            color: $colorRed1;
+            a {
+                color: $colorRed1;
+            }
             transition: .6s all ease;
         }
     }
