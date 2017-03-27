@@ -284,15 +284,35 @@ img[src] {
 .form-horizontal {
   margin-bottom: 40px;
   box-shadow: 0 7px 11px 0;
-  height: 680px;
+  height: 740px;
   width: 600px;
   background: #fff;
   font-family: "Lato Light Italic", sans-serif;
-  padding: 60px; }
+  padding: 60px;
+  font-size: .9rem; }
+  .form-horizontal .btn {
+    background: #970f0f;
+    color: #fff;
+    font-family: Raleway, sans-serif;
+    font-size: 0.6rem;
+    height: -1px;
+    text-transform: uppercase;
+    border: none;
+    padding: 10px 30px;
+    -moz-transition: all .6s;
+    -o-transition: all .6s;
+    -webkit-transition: all .6s;
+    transition: all .6s;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    text-decoration: none;
+    margin-left: 10px; }
   .form-horizontal .img-container {
     width: 128px;
     height: 128px;
-    display: inline-block; }
+    display: inline-block;
+    padding: 0; }
   .form-horizontal img {
     width: 100%;
     height: auto; }
@@ -300,8 +320,21 @@ img[src] {
     margin: 0 -10px; }
     .form-horizontal .row > [class*="col-"] {
       padding: 0 10px; }
-  .form-horizontal .checkbox {
-    display: inline-block; }
+  .form-horizontal textarea {
+    resize: none; }
+  .form-horizontal input[type="checkbox"] {
+    display: inline-block;
+    margin-right: 30px; }
+  .form-horizontal input[name="ProductName"] {
+    width: 100%; }
+  .form-horizontal input[name="RegularPrice"] {
+    width: 40%; }
+  .form-horizontal input[name="SKUno"] {
+    width: 40%; }
+  .form-horizontal input[name="SagePartno"] {
+    width: 40%; }
+  .form-horizontal input[name="Discount"] {
+    width: 40%; }
   .form-horizontal input[name="Title"] {
     width: 100%; }
   .form-horizontal input[name="Description"] {
@@ -310,6 +343,16 @@ img[src] {
     text-align: left; }
   .form-horizontal .datepicker {
     max-width: 90px; }
+  .form-horizontal .fa {
+    color: #eb2020;
+    border: 1px solid lightgrey;
+    border-left: none;
+    font-size: .8rem;
+    padding: 7px 8px;
+    vertical-align: bottom; }
+
+.form-control:nth-child(7) label.control-label {
+  margin: 0 10px; }
 
 .form-title {
   background: #c2c2c2;
@@ -850,7 +893,8 @@ a.canvasjs-chart-credit {
   font-weight: 700;
   letter-spacing: 1px;
   background-color: #dbd8cf; }
-.createlink p.label:hover, .createlink p.label:focus {
+.createlink p.label:hover,
+.createlink p.label:focus {
   border-bottom: 4px solid #970f0f; }
 .createlink p.label-red {
   text-align: center;

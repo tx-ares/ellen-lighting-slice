@@ -4,68 +4,66 @@
     <p>Create Product</p><a class="cancel-button" href="#"><i class="fa fa-times" aria-hidden="true"></i></a></div>
 <div class="form-horizontal">
     <div class="form-group">
-        <div class="col-sm-4">
+        <div class="col-md-3 no-paddding">
             <div class="img-container">
                 <img src="http://placehold.it/128x128" alt="" />
             </div>
         </div>
-        <div class="col-sm-8">
+        <div class="col-md-9 no-paddding">
             <label class="control-label">Upload a thumbnail photo</label>
             <input type="file" id="Photo" name="upload" value="Browse" />
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-md-4">Product Name</label>
-        <div class="col-md-8">
+        <label class="control-label col-md-3">Product Name</label>
+        <div class="col-md-9">
             <input type="text" name="ProductName" class="form-control k-textbox" />
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-md-4">Unit Price</label>
-        <div class="col-md-8">
+        <label class="control-label col-md-3">Unit Price</label>
+        <div class="col-md-9">
             <input type="text" name="RegularPrice" class="form-control k-textbox" />
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-md-4">Description</label>
-        <div class="col-md-8">
+        <label class="control-label col-md-3">Description</label>
+        <div class="col-md-9">
             <textarea class="form-control"></textarea>
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-md-4">SKU #</label>
-        <div class="col-md-8">
+        <label class="control-label col-md-3">SKU #</label>
+        <div class="col-md-9">
             <input type="text" name="SKUno" class="form-control k-textbox">
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-md-4">Sage Part #</label>
-        <div class="col-md-8">
+        <label class="control-label col-md-3">Sage Part #</label>
+        <div class="col-md-9">
             <input type="text" name="SagePartno" class="form-control k-textbox">
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-md-4">On Sale
-            <input type="checkbox" name="checkbox">
+        <label class="control-label col-md-3">On Sale
         </label>
-        <div class="col-md-8">
+        <div class="col-md-9">
+            <input type="checkbox" name="checkbox">
             <label class="control-label">From: </label>
             <input type="text" class="datepicker" placeholder="mm/dd/yy"><i class="fa fa-calendar" aria-hidden="true"></i>
-
             <label class="control-label">To: </label>
             <input type="text" class="datepicker" placeholder="mm/dd/yy"><i class="fa fa-calendar" aria-hidden="true"></i>
-
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-md-4">Discount %</label>
-        <div class="col-md-8">
-            <input class="form-control">
+        <label class="control-label col-md-3">Discount %</label>
+        <div class="col-md-9">
+            <input class="form-control" name="Discount">
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-md-4">Datasheet</label>
-        <div class="col-md-8">
+        <label class="control-label col-md-3">Datasheet</label>
+        <div class="col-md-9">
             <input type="file" id="Datasheet" name="uploadDatasheet" value="Browse" />
         </div>
     </div>
@@ -76,11 +74,9 @@
         </div>
     </div>
 </div>
-
 <script type="text/javascript">
 $(".cancel-button").on("click", function(e) {
     $(this).dialog('close');
 });
 $('.datepicker').datepicker();
-
 </script>
