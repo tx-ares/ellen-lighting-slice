@@ -1051,7 +1051,7 @@ footer {
     }
 }
 
-// New styles
+// Side Menu
 .side-menu-wrap {
     width: 180px;
     display: inline-block;
@@ -1062,6 +1062,9 @@ footer {
             padding: 20px 10px;
         }
         li:hover {
+            background-color: #fff;
+        }
+        li:focus {
             background-color: #fff;
         }
     }
@@ -1112,10 +1115,16 @@ a.canvasjs-chart-credit {
 
 .order-num-container {
     text-align: center;
+    margin-top: 125px;
+    hr {
+        margin: 0.4em 0;
+    }
     .order-num {
-        font-size: 28px;
+        font-size: 5rem;
         color: $colorRed1;
         letter-spacing: 2px;
+        font-family: $font-ll;
+        font-weight: bolder;
     }
 }
 
@@ -1210,7 +1219,7 @@ div#new-dialog {
         li:focus {
             background: #fff;
             color: $colorRed1;
-            transition: .6s all ease;   
+            transition: .6s all ease;
         }
     }
 }

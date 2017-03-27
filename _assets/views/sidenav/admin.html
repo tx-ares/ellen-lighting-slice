@@ -1,37 +1,49 @@
 <!-- Dynamically loaded content -->
-<div class="container-fluid">
-    <div id="tabs">
-        <ul>
-            <li><a href="#tabs-1">Products</a></li>
-            <li><a href="#tabs-2">Properties</a></li>
-            <li><a href="#tabs-3">Users</a></li>
-            <li><a href="#tabs-4">Categories</a></li>
-        </ul>
-        <div id="tabs-1">
-            <div class="createlink">
-                <p><i class="fa fa-lightbulb-o" aria-hidden="true"></i></p>
-                <p value="NewProduct" class="open-product-dialog label">CREATE NEW PRODUCT</p>
-            </div>
+<ul class="nav nav-tabs">
+    <li class="active">
+        <a href="#tabProperties" data-toggle="tab">PROPERTIES</a>
+    </li>
+    <li>
+        <a href="#tabProducts" data-toggle="tab">PRODUCTS</a>
+    </li>
+    <li>
+        <a href="#tabCategories" data-toggle="tab">CATEGORIES</a>
+    </li>
+    <li>
+        <a href="#tabUsers" data-toggle="tab">USERS</a>
+    </li>
+</ul>
+<div class="tab-content">
+    <div class="tab-pane fade active" id="tabProperties">
+        <div class="createlink">
+            <p><i class="fa fa-lightbulb-o" aria-hidden="true"></i></p>
+            <p value="NewProduct" class="open-product-dialog label">CREATE NEW PRODUCT</p>
         </div>
-        <div id="tabs-2">
-            <div class="createlink">
-                <p><i class="fa fa-home" aria-hidden="true"></i></p>
-                <p value="NewProperty" class="open-product-dialog label">CREATE NEW PROPERTY</p>
-            </div>
+        <!-- @Html.Action("Index", "Property")
+        @*@Html.RenderAction(Model.NameOfPartialViewHere, Model.SomeVM);*@ -->
+    </div>
+    <div class="tab-pane fade" id="tabProducts">
+        <div class="createlink">
+            <p><i class="fa fa-home" aria-hidden="true"></i></p>
+            <p value="NewProperty" class="open-product-dialog label">CREATE NEW PROPERTY</p>
         </div>
-        <div id="tabs-3">
-            <div class="createlink">
-                <p><i class="fa fa-user" aria-hidden="true"></i></p>
-                <p value="NewUser" class="open-product-dialog label">CREATE NEW USER</p>
-            </div>
+        <!-- @Html.Action("Index", "Product") -->
+    </div>
+    <div class="tab-pane fade" id="tabCategories">
+        <div class="createlink">
+            <p><i class="fa fa-user" aria-hidden="true"></i></p>
+            <p value="NewUser" class="open-product-dialog label">CREATE NEW USER</p>
         </div>
-        <div id="tabs-4">
-            <div class="createlink">
-                <p><i class="fa fa-list" aria-hidden="true"></i></p>
-                <p value="NewCategory" class="open-product-dialog label">CREATE NEW CATEGORY</p>
-            </div>
+        <!--         @Html.Action("Index", "Category")
+ -->
+    </div>
+    <div class="tab-pane fade" id="tabUsers">
+        <div class="createlink">
+            <p><i class="fa fa-list" aria-hidden="true"></i></p>
+            <p value="NewCategory" class="open-product-dialog label">CREATE NEW CATEGORY</p>
         </div>
+        <!--         @Html.Action("Index", "Users")
+ -->
     </div>
 </div>
-
 <div id="new-dialog" style="display: none"></div>

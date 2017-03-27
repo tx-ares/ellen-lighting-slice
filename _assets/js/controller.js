@@ -1,5 +1,6 @@
 function sideMenuRouter() { // View Controller 
 
+    //Open Home tab on page load.
     if (!selectedNavLi) {
         $('.viewer').load('_assets/views/sidenav/home.html', function() {
             chartcreator();
@@ -26,8 +27,8 @@ function sideMenuRouter() { // View Controller
         if (this.getAttribute('id') === 'admin') {
             $('.viewer').load('_assets/views/sidenav/admin.html', function() {
 
-                $("#tabs").tabs();
-                console.log(".tabs() init")
+                // $("#tabs").tabs();
+                console.log("admin loaded")
             })
 
 
