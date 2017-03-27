@@ -1,4 +1,4 @@
-function sideMenuRouter() { // View Controller
+function sideMenuRouter() { // View Controller 
 
     if (!selectedNavLi) {
         $('.viewer').load('_assets/views/sidenav/home.html', function() {
@@ -8,7 +8,6 @@ function sideMenuRouter() { // View Controller
     }
 
     var selectedNavLi = $('.side-menu > li')
-
 
     selectedNavLi.on('click', function() {
         console.log(this.getAttribute('id'));
@@ -36,7 +35,6 @@ function sideMenuRouter() { // View Controller
 
         console.log("Routed.")
             // document.querySelector(".viewer").innerHTML = html
-
     });
 }
 

@@ -868,13 +868,24 @@ footer {
   padding: 7px;
   /*Becareful not to break layout for header, doing so will break slider*/ }
 
+#barchartContainer {
+  margin: 30px 0 0 0; }
+  #barchartContainer .canvasjs-chart-container canvas.canvasjs-chart-canvas {
+    border: 1px solid lightgrey;
+    padding: 40px; }
+
 a.canvasjs-chart-credit {
   opacity: 0; }
 
-.order-num {
-  font-size: 28px;
-  color: #970f0f;
-  letter-spacing: 2px; }
+.order-num-container {
+  text-align: center; }
+  .order-num-container .order-num {
+    font-size: 28px;
+    color: #970f0f;
+    letter-spacing: 2px; }
+
+div.t-home .row:last-child {
+  margin-top: 120px; }
 
 /* Icons */
 .createlink p {
