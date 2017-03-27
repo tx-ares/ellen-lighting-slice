@@ -1,6 +1,14 @@
 function sideMenuRouter() { // View Controller
 
+    if (!selectedNavLi) {
+        $('.viewer').load('_assets/views/sidenav/home.html', function() {
+            chartcreator();
+            createFormLink();
+        });
+    }
+
     var selectedNavLi = $('.side-menu > li')
+
 
     selectedNavLi.on('click', function() {
         console.log(this.getAttribute('id'));
