@@ -931,7 +931,7 @@ div.t-home .row:last-child {
     background-color: #970f0f;
     padding: 5px 40px;
     display: inline-block;
-    margin-left: 20px; }
+    margin-left: 60px; }
     .createlink p.label-red .fa {
       font-size: 20px;
       color: #fff;
@@ -986,5 +986,10 @@ div#new-dialog {
 .nav-tabs > li.active > a:hover {
   color: #970f0f;
   transition: .6s all ease; }
+
+.tab-content {
+  border-left: 2px solid #c2c2c2;
+  border-right: 2px solid #c2c2c2;
+  border-bottom: 2px solid #c2c2c2; }
 
 /*# sourceMappingURL=style.css.map */
