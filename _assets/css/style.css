@@ -1001,4 +1001,26 @@ div#new-dialog {
   border-right: 1px solid #c2c2c2;
   border-bottom: 1px solid #c2c2c2; }
 
+.table-options input[type="number"] {
+  display: block; }
+.table-options th {
+  padding: 0 40px; }
+.table-options label {
+  margin: 0px 85px; }
+.table-options .labels-row {
+  font-size: .7rem;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+.table-options .options-row {
+  background: #c2c2c2; }
+  .table-options .options-row input {
+    margin: 1px 10px;
+    height: 30px; }
+
+.main-table-container {
+  padding: 5px; }
+  .main-table-container th[scope="row"] {
+    padding: 40px 3px;
+    border-left: 5px solid #970f0f; }
+
 /*# sourceMappingURL=style.css.map */

@@ -1303,3 +1303,42 @@ div#new-dialog {
     border-right: 1px solid $colorLightGrey6;
     border-bottom: 1px solid $colorLightGrey6;
 }
+
+.table-options {
+    input[type="number"] {
+        display: block;
+    }
+    // select{
+    //     display: block;
+    // }
+    th {
+        padding: 0 40px;
+    }
+
+    label {
+        // padding: 0 40px;
+        margin: 0px 85px;
+    }
+    .labels-row {
+        font-size: .7rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    .options-row {
+        background: $colorLightGrey6;
+        input {
+            // padding: 5px 20px;
+            margin: 1px 10px;
+            height: 30px;
+        }
+    }   
+}
+
+.main-table-container {
+    padding: 5px;
+    
+    th[scope="row"] {
+        padding: 40px 3px;
+        border-left: 5px solid $colorRed1;
+    }
+}
