@@ -31,12 +31,14 @@ function sideMenuRouter() { // View Controller
 
         if (this.getAttribute('id') === 'admin') {
             $(this).addClass('active');
+            // $('.tab-content tab-pane:first-child').addClass('active')
             $(this).siblings().removeClass("active");
 
             $('.viewer').load('_assets/views/sidenav/admin.html', function() {
-
-                $("#tabs").tabs();
-                console.log(".tabs() init")
+                // $("#tabs").tabs();
+                // $('div#tabProperties').addClass('active');
+                console.log("default tabProperties addClass -> active")
+                // console.log(".tabs() init")
             })
 
         }
