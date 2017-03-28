@@ -125,10 +125,9 @@ function chartcreator() { // Refactor later for all charts to be in array, then 
 
     barchart.render();
     piechart.render();
-
 };
 
-function createFormLink() {
+function createFormLink() { //utilized jqueryui functions to create popup modal forms
 	console.log("createFormLink init")
     $('.open-product-dialog').click(
         function() {

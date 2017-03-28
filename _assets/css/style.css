@@ -843,7 +843,8 @@ footer {
   display: inline-block;
   background-color: #959595; }
   .side-menu-wrap .side-menu {
-    font-family: "Georgia", sans-serif; }
+    font-family: "Georgia", sans-serif;
+    margin: 40px 0; }
     .side-menu-wrap .side-menu li {
       text-align: center;
       padding: 20px 10px;
