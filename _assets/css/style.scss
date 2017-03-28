@@ -1150,7 +1150,7 @@ div.t-home {
 
 .createlink {
     width: 70%;
-    margin: 0 auto;
+    margin: 10px 0;
     font-size: .8rem;
     p {
         text-align: center;
@@ -1183,15 +1183,23 @@ div.t-home {
         text-align: center;
         font-weight: 700;
         font-size: .8rem;
-        letter-spacing: 1px;
+        letter-spacing: 2px;
         background-color: $colorRed1;
-        padding: 5px;
-        width: 35%;
+        padding: 5px 40px;
         display: inline-block;
-        margin: 0 40px;
+        margin-left:20px;
+        // margin: 0 40px;
+        // :first-child {
+        //     width: 100px;
+        // }
+        // :nth-child(2) {
+        //     width: 150px;
+        //     margin-left: 60px;
+        // }
         .fa {
             font-size: 20px;
             color: #fff;
+            max-width: 20px;
         }
         a {
             color: #fff;
@@ -1276,5 +1284,3 @@ div#new-dialog {
     color: $colorRed1;
     transition: .6s all ease;
 }
-
-

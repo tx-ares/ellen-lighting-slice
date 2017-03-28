@@ -899,7 +899,7 @@ div.t-home .row:last-child {
 /* Icons */
 .createlink {
   width: 70%;
-  margin: 0 auto;
+  margin: 10px 0;
   font-size: .8rem; }
   .createlink p {
     text-align: center;
@@ -927,15 +927,15 @@ div.t-home .row:last-child {
     text-align: center;
     font-weight: 700;
     font-size: .8rem;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     background-color: #970f0f;
-    padding: 5px;
-    width: 35%;
+    padding: 5px 40px;
     display: inline-block;
-    margin: 0 40px; }
+    margin-left: 20px; }
     .createlink p.label-red .fa {
       font-size: 20px;
-      color: #fff; }
+      color: #fff;
+      max-width: 20px; }
     .createlink p.label-red a {
       color: #fff; }
 
