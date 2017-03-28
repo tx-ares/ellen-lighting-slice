@@ -849,10 +849,9 @@ footer {
       padding: 20px 10px;
       text-transform: uppercase;
       font-size: .9rem; }
-    .side-menu-wrap .side-menu li:hover {
-      background-color: #fff; }
-    .side-menu-wrap .side-menu li:focus {
-      background-color: #fff; }
+    .side-menu-wrap .side-menu li.active {
+      background: #fff;
+      transition: .6 all ease; }
 
 .side-menu {
   min-height: 745px; }

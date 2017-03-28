@@ -1067,10 +1067,14 @@ footer {
             font-size: .9rem;
         }
         li:hover {
-            background-color: #fff;
+            // background-color: #fff;
         }
-        li:focus {
-            background-color: #fff;
+        // li:focus {
+        //     background-color: #fff;
+        // }
+        li.active {
+            background: $colorWhite;
+            transition: .6 all ease;
         }
     }
 }
@@ -1271,3 +1275,5 @@ div#new-dialog {
     color: $colorRed1;
     transition: .6s all ease;
 }
+
+
