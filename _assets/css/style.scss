@@ -1084,20 +1084,36 @@ footer {
     min-height: 745px;
 }
 
+.main-col {
+        min-width: 1440px;
+    }
+
 @include max-screen($xxlg) {
     .side-menu {
         min-height: 745px;
     }
     .viewer {
-        min-width: 1440px;
+        min-width: 1142px;
+    }
+    .main-col {
+        min-width: 1142px;
     }
 }
+
+@include max-screen($xlg) {
+    .main-col {
+        min-width: 778px;
+    }
+}
+
+
 
 // .main-col {
 //     height: 100%;
 //     width: auto;
 //     display: inline-block;
 // }
+
 .logo {
     height: 80px;
     width: 200px;
