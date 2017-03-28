@@ -955,26 +955,36 @@ div#new-dialog {
   .ui-dialog-titlebar.ui-widget-header.ui-corner-all.ui-helper-clearfix.ui-draggable-handle span.ui-dialog-title {
     font-family: "Georgia", sans-serif; }
 
-#tabs {
+.nav-tabs {
   width: 100%; }
-  #tabs a {
-    color: #fff; }
-  #tabs ul {
-    font-family: "Georgia", sans-serif;
-    letter-spacing: 2px;
-    font-size: .8rem; }
-    #tabs ul li {
-      width: 24%;
-      display: inline-block;
-      padding: 10px 20px;
-      margin: 20px 0;
+  .nav-tabs li {
+    width: 24%;
+    margin: 20px 2px;
+    text-align: center; }
+    .nav-tabs li a {
       background: #c2c2c2;
       color: #fff;
-      text-align: center; }
-    #tabs ul li:focus {
+      font-family: "Georgia", sans-serif;
+      letter-spacing: 2px;
+      font-size: .8rem; }
+    .nav-tabs li a:hover {
+      background-color: #c2c2c2; }
+  .nav-tabs ul {
+    font-family: "Georgia", sans-serif;
+    letter-spacing: 2px;
+    font-size: .8rem;
+    color: #970f0f; }
+    .nav-tabs ul li.active {
       background: #fff;
+      color: #970f0f;
       transition: .6s all ease; }
-      #tabs ul li:focus a {
+      .nav-tabs ul li.active a {
         color: #970f0f; }
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+  color: #970f0f;
+  transition: .6s all ease; }
 
 /*# sourceMappingURL=style.css.map */
