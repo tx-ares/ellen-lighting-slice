@@ -1085,8 +1085,8 @@ footer {
 }
 
 .main-col {
-        min-width: 1440px;
-    }
+    min-width: 1440px;
+}
 
 @include max-screen($xxlg) {
     .side-menu {
@@ -1106,14 +1106,11 @@ footer {
     }
 }
 
-
-
 // .main-col {
 //     height: 100%;
 //     width: auto;
 //     display: inline-block;
 // }
-
 .logo {
     height: 80px;
     width: 200px;
@@ -1166,7 +1163,7 @@ div.t-home {
 
 .createlink {
     width: 70%;
-    margin: 10px 0;
+    padding: 20px;
     font-size: .8rem;
     p {
         text-align: center;
@@ -1248,10 +1245,10 @@ div#new-dialog {
 .nav-tabs {
     width: 100%;
     li {
-        width: 24%;
+        width: 24.85%;
+        margin: 20px 2px 0 0;
         // display: inline-block;
         // padding: 10px 20px;
-        margin: 20px 2px;
         // background: $colorLightGrey6;
         // color: #fff;
         text-align: center;
@@ -1302,7 +1299,7 @@ div#new-dialog {
 }
 
 .tab-content {
-    border-left: 2px solid $colorLightGrey6;
-    border-right: 2px solid $colorLightGrey6;
-    border-bottom: 2px solid $colorLightGrey6;
+    border-left: 1px solid $colorLightGrey6;
+    border-right: 1px solid $colorLightGrey6;
+    border-bottom: 1px solid $colorLightGrey6;
 }
