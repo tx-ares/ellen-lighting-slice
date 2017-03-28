@@ -76,7 +76,12 @@
 </div>
 <script type="text/javascript">
 $(".cancel-button").on("click", function(e) {
-    $(this).dialog('close');
+    e.preventDefault();
+    // $(this).dialog('close');
+    console.log($('this').parent())
+    $(this).closest('#new-dialog').css({
+        display: 'none'
+         });
 });
 $('.datepicker').datepicker();
 </script>
