@@ -129,19 +129,94 @@
             <!-- @Html.Action("Index", "Property")
         @*@Html.RenderAction(Model.NameOfPartialViewHere, Model.SomeVM);*@ -->
         </div>
-        <ul class="pagination">
-            <li><a href="#">&laquo;</a></li>
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <li><a href="#">&raquo;</a></li>
-        </ul>
         <div class="tab-pane fade" id="tabProducts">
             <div class="createlink">
                 <p class="label-red"><i class="fa fa-plus-circle" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;<a href="/Admin/Home/NewProduct" id="open-product-dialog">CREATE NEW PRODUCT</a></p>
                 <p class="label-red"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;<a href="#" id="open-property-dialog">ASSIGN SELECTED ITEMS TO PROPERTY</a></p>
+            </div>
+            <div class="table-options">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th>Contact Name</th>
+                            <th>On Sale</th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <select name="select">
+                                    <option value="value1">Value 1</option>
+                                    <option value="value2" selected>Value 2</option>
+                                    <option value="value3">Value 3</option>
+                                </select>
+                            </th>
+                            <th>
+                                <select name="select">
+                                    <option value="value1">Value 1</option>
+                                    <option value="value2" selected>Value 2</option>
+                                    <option value="value3">Value 3</option>
+                                </select>
+                            </th>
+                            <th>
+                                <select name="select">
+                                    <option value="value1">Value 1</option>
+                                    <option value="value2" selected>Value 2</option>
+                                    <option value="value3">Value 3</option>
+                                </select>
+                            </th>
+                            <th>
+                                <select name="select">
+                                    <option value="value1">Value 1</option>
+                                    <option value="value2" selected>Value 2</option>
+                                    <option value="value3">Value 3</option>
+                                </select>
+                            </th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <div class="main-table-container">
+                <table class="table">
+                    <tbody class="main">
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>Otto</td>
+                            <td>
+                                <button>2</button>
+                                <button>2</button>
+                                <button>2</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                            <td>Otto</td>
+                            <td>
+                                <button>2</button>
+                                <button>2</button>
+                                <button>2</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                            <td>Otto</td>
+                            <td>
+                                <button>2</button>
+                                <button>2</button>
+                                <button>2</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
             <!--         @Html.Action("Index", "Product")
  -->
@@ -151,6 +226,91 @@
                 <p class="label-red"><i class="fa fa-plus-circle" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;<a href="/Admin/Home/NewCategory" id="open-category-dialog">CREATE NEW CATEGORY</a></p>
                 <p class="label-red"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;<a href="#" id="open-property-dialog">ASSIGN SELECTED ITEMS TO PROPERTY</a></p>
             </div>
+<div class="table-options">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th>Contact Name</th>
+                            <th>On Sale</th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <select name="select">
+                                    <option value="value1">Value 1</option>
+                                    <option value="value2" selected>Value 2</option>
+                                    <option value="value3">Value 3</option>
+                                </select>
+                            </th>
+                            <th>
+                                <select name="select">
+                                    <option value="value1">Value 1</option>
+                                    <option value="value2" selected>Value 2</option>
+                                    <option value="value3">Value 3</option>
+                                </select>
+                            </th>
+                            <th>
+                                <select name="select">
+                                    <option value="value1">Value 1</option>
+                                    <option value="value2" selected>Value 2</option>
+                                    <option value="value3">Value 3</option>
+                                </select>
+                            </th>
+                            <th>
+                                <select name="select">
+                                    <option value="value1">Value 1</option>
+                                    <option value="value2" selected>Value 2</option>
+                                    <option value="value3">Value 3</option>
+                                </select>
+                            </th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <div class="main-table-container">
+                <table class="table">
+                    <tbody class="main">
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>Otto</td>
+                            <td>
+                                <button>3</button>
+                                <button>3</button>
+                                <button>3</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                            <td>Otto</td>
+                            <td>
+                                  <button>3</button>
+                                <button>3</button>
+                                <button>3</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                            <td>Otto</td>
+                            <td>
+                                  <button>3</button>
+                                <button>3</button>
+                                <button>3</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
             <!--         @Html.Action("Index", "Category")
  -->
         </div>
@@ -158,6 +318,91 @@
             <div class="createlink">
                 <p class="label-red"><i class="fa fa-plus-circle" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;<a href="/Admin/Home/NewUser" id="open-user-dialog">CREATE NEW USER</a></p>
                 <p class="label-red"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;<a href="#" id="open-property-dialog">ASSIGN SELECTED ITEMS TO PROPERTY</a></p>
+            </div>
+
+            <div class="table-options">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th>Contact Name</th>
+                            <th>On Sale</th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <select name="select">
+                                    <option value="value1">Value 1</option>
+                                    <option value="value2" selected>Value 2</option>
+                                    <option value="value3">Value 3</option>
+                                </select>
+                            </th>
+                            <th>
+                                <select name="select">
+                                    <option value="value1">Value 1</option>
+                                    <option value="value2" selected>Value 2</option>
+                                    <option value="value3">Value 3</option>
+                                </select>
+                            </th>
+                            <th>
+                                <select name="select">
+                                    <option value="value1">Value 1</option>
+                                    <option value="value2" selected>Value 2</option>
+                                    <option value="value3">Value 3</option>
+                                </select>
+                            </th>
+                            <th>
+                                <select name="select">
+                                    <option value="value1">Value 1</option>
+                                    <option value="value2" selected>Value 2</option>
+                                    <option value="value3">Value 3</option>
+                                </select>
+                            </th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <div class="main-table-container">
+                <table class="table">
+                    <tbody class="main">
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>Otto</td>
+                            <td>
+                                     <button>4</button>
+                                <button>4</button>
+                                <button>4</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                            <td>Otto</td>
+                            <td>
+                                  <button>4</button>
+                                <button>4</button>
+                                <button>4</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                            <td>Otto</td>
+                            <td>
+                                      <button>4</button>
+                                <button>4</button>
+                                <button>4</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
             <!-- @Html.Action("Index", "Users") -->
         </div>
@@ -196,4 +441,13 @@
         </div>
     </div> -->
 </div>
+<ul class="pagination">
+    <li><a href="#">&laquo;</a></li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">&raquo;</a></li>
+</ul>
 <div id="new-dialog" style="display: none"></div>
